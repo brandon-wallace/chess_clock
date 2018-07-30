@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">  
+      <meta name="description" content="Chess Timer">
+      <link rel="icon" type="image/svg" href="images/favicon.svg">
+      <link rel="stylesheet" type="text/css" href="style.css">
+      <title>Chess Clock</title>
+    </head>
+    <body>
+
+      <!-- menu bar navigation -->
+      <nav>
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="chessquotes.html">chess quotes</a></li>
+          <li><a href="chesslinks.html">chess links</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="error.html">404</a></li>
+        </ul>
+      </nav><!-- END menu bar navigation -->
+
+      <!-- wrapper -->
+      <div class="container">
+
+        <h1 class="banner">CHESS CLOCK</h1>
+
+        <div class="players">
+
+        <!-- player 1 -->
+        <div class="p1">
+          <img src="images/wK.svg" alt="light_color_queen" width="150" height="150">
+          <h1>PLAYER 1</h1>
+          <h1 id="p1-time">10:00</h1>
+
+          <div class="tm-ctl">
+            <img src="images/plus.png" onclick="increaseP1()" title="Increase Time" width="64" height="64">
+            <img src="images/minus.png" onclick="decreaseP1()" title="Decrease Time" width="64" height="64">
+          </div>
+
+        </div><!-- END player 1 -->
+
+        <!-- player 2 -->
+        <div class="p2">
+          <img src="images/bK.svg" alt="dark_color_queen" width="150" height="150">
+          <h1>PLAYER 2</h1>
+          <h1 id="p2-time">10:00</h1>
+
+          <div class="tm-ctl">
+            <img src="images/plus.png" onclick="increaseP2" title="Increase Time" width="64" height="64">
+            <img src="images/minus.png" onclick="decreaseP2" title="Decrease Time" width="64" height="64">
+          </div>
+        </div><!-- END player 2 -->
+
+        </div><!-- END players -->
+
+        <div class="game-options">
+          <input type="button" value="START" class="btn" onclick="start()" id="strt-btn">
+          <input type="button" value="RESET" class="btn" onclick="reset()" id="rst-btn">
+          <input type="button" value="PAUSE" class="btn" onclick="stop()" id="pause-btn">
+          <input type="button" value="SWITCH" class="btn tggl" onclick="switch()" id="switch-btn">
+        </div>
+
+      </div><!-- END wrapper -->
+
+    </body>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <script type="text/javascript" src="chessclock.js"></script> 
+</html>
+
