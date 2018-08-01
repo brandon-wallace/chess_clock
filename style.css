@@ -113,12 +113,8 @@ nav li a {
     color: #FFFFFF; 
 }
 
-#p1-time {
-    font-size: 400%;
-}
-
-#p2-time {
-    font-size: 400%;
+.digits {
+    font-size: 200%;
 }
 
 .tm-ctl {
