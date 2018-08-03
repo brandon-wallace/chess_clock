@@ -50,10 +50,14 @@ function decreaseP2() {
 
 
 function reset() {
-  var p1Time = document.getElementById('p1-min');
+  let p1Time = document.getElementById('p1-min');
   p1Time.innerHTML = 10;
-  var p2Time = document.getElementById('p2-min');
+  let p1Sec =  document.getElementById('p1-sec');
+  p1Sec.innerHTML = '00';
+  let p2Time = document.getElementById('p2-min');
   p2Time.innerHTML = 10;
+  let p2Sec =  document.getElementById('p2-sec');
+  p2Sec.innerHTML = '00';
 }
 
 function start() {
@@ -71,7 +75,7 @@ function start() {
         seconds--;
     }
     
-    var timerId = setInterval('start()', 1000);
+    let timerId = setInterval('start()', 1000);
     /*
     let min = document.getElementById('p1-min').innerHTML;
     let sec = document.getElementById('p1-sec').innerHTML;
