@@ -105,6 +105,7 @@ let countdown = setInterval(function() {
         console.log({p1Minutes, seconds});
 
         if (p1Minutes == 0 && seconds == 0) {
+            document.getElementById('timeout1').style.color = "#ff0000";
             clearInterval(countdown);
         }
         if (seconds == 0) {
