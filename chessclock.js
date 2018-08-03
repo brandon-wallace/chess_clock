@@ -39,6 +39,9 @@ function decreaseP1() {
 function increaseP2() {
   let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) + 1;
+  if (min >= 99) {
+      min = 99;
+  }
   if (min < 10) {
     min = '0' + min;
   }
@@ -49,6 +52,9 @@ function increaseP2() {
 function decreaseP2() {
   let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) - 1;
+  if (min <= 1) {
+      min = 1;
+  }
   if (min < 10) {
     min = '0' + min;
   }
@@ -71,8 +77,8 @@ function reset() {
 
 // Start the clock.
 function start() {
-let countdown = setInterval(
-    function() {
+let countdown = setInterval(function() {
+    console.log(typeof countdown);
 
         let p1Minutes = document.getElementById('p1-min').innerHTML;
         p1Minutes = parseInt(p1Minutes, 10);
@@ -96,13 +102,15 @@ let countdown = setInterval(
 
         p1Minutes = parseInt(p1Minutes, 10);
 
+        console.log({p1Minutes, seconds});
+
+        if (p1Minutes == 0 && seconds == 0) {
+            clearInterval(countdown);
+        }
         if (seconds == 0) {
             seconds = 60;
         }
 
-        if (p1Minutes == 0 && seconds == 0) {
-            clearInterval(countdown());
-        }
 
     }, 1000);
 }
