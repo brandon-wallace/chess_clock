@@ -1,20 +1,15 @@
-
-var sec = 0;
-
-var playing = false;
-var dft = document.getElementById('p1-min');
-var increaseP1Time = document.getElementById('p1-min');
-var decreaseP1Time = document.getElementById('p1-min');
-var increaseP2Time = document.getElementById('p2-min');
-var decreaseP2Time = document.getElementById('p2-min');
-var rstbtn = document.getElementById('rst-btn');
-var srtbtn = document.getElementById('strt-btn');
-
+let seconds = 60;
+let increaseP1Time = document.getElementById('p1-min');
+let decreaseP1Time = document.getElementById('p1-min');
+let increaseP2Time = document.getElementById('p2-min');
+let decreaseP2Time = document.getElementById('p2-min');
+let rstbtn = document.getElementById('rst-btn');
+let srtbtn = document.getElementById('strt-btn');
 
 
 // Player buttons
 function increaseP1() {
-  min = document.getElementById('p1-min').innerHTML;
+  let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) + 1;
   if (min < 10) {
     min = '0' + min;
@@ -24,7 +19,7 @@ function increaseP1() {
 
 
 function decreaseP1() {
-  min = document.getElementById('p1-min').innerHTML;
+  let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) - 1;
   if (min < 10) {
     min = '0' + min;
@@ -33,9 +28,8 @@ function decreaseP1() {
 }
 
 
-
 function increaseP2() {
-  min = document.getElementById('p2-min').innerHTML;
+  let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) + 1;
   if (min < 10) {
     min = '0' + min;
@@ -45,13 +39,14 @@ function increaseP2() {
 
 
 function decreaseP2() {
-  min = document.getElementById('p2-min').innerHTML;
+  let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) - 1;
   if (min < 10) {
     min = '0' + min;
   }
   decreaseP2Time.innerHTML = min;
 }
+// END Player buttons
 
 
 function reset() {
@@ -61,29 +56,58 @@ function reset() {
   p2Time.innerHTML = 10;
 }
 
-
 function start() {
-  var min = 10;
-  var p1Time = document.getElementById('p1-min');
-  p1Time.innerHTML - 1;
+    let minutes = Math.round((seconds - 30) / 60);
+    let remainingSeconds = seconds % 60;
+
+    document.getElementById('p1-sec').innerHTML = remainingSeconds;
+    document.getElementById('p1-min').innerHTML = minutes;
+
+    if (seconds == 0) {
+        clearInterval(start);
+        document.getElementById('p1-min').innerHTML = '00';
+        document.getElementById('p1-sec').innerHTML = '00';
+    } else {
+        seconds--;
+    }
+    
+    var timerId = setInterval('start()', 1000);
+    /*
+    let min = document.getElementById('p1-min').innerHTML;
+    let sec = document.getElementById('p1-sec').innerHTML;
+    sec = seconds;
+    console.log(min);
+    console.log(sec);
+    document.getElementById('p1-sec').innerHTML = sec;
+
+    function countdown() {
+      sec -= 1;
+      document.getElementById('p1-sec').innerHTML = sec;
+      if (sec == 0) {
+        min = min - 1;
+        document.getElementById('p1-min').innerHTML = min;
+      }
+    }
+      timeOutPlayer();
+    */
 }
+// var timeId = setInterval(countdown, 1000);
+// start();
 
-
-var timeId = setInterval(start, 1000);
 
 
 function timeOutPlayer() {
-  clearInterval(timeId);
+    clearInterval(timeId);
 }
 
 /*
 function stop() {
   playing = false;
 }
-*/
 
-function switchPlayer() {
+*/
   /*
+function switchPlayer() {
   document.onkeydown = function(event) {
     if (event) {
       if (event.keyCode == 32 || event.which == 32) {
@@ -96,4 +120,3 @@ function switchPlayer() {
     }
   }
   */
-}
