@@ -59,7 +59,6 @@ function reset() {
   p2Time.innerHTML = 10;
   let p2Sec =  document.getElementById('p2-sec');
   p2Sec.innerHTML = '00';
-  console.log("time reset");
 }
 
 
@@ -67,29 +66,38 @@ function reset() {
 function start() {
 let countdown = setInterval(
     function() {
-    let p1Minutes = document.getElementById('p1-min').innerHTML;
-    console.log(p1Minutes);
-    console.log(document.getElementById('p1-sec').innerHTML);
-    console.log(seconds); 
-    seconds--;
-    console.log(seconds); 
 
-    if (p1Minutes < 10) {
-        p1Minutes = '0' + p1Minutes;
-    }
-    document.getElementById('p1-sec').innerHTML = seconds;
-    document.getElementById('p1-min').innerHTML = p1Minutes;
-
-    function countdown(sec) {
+        let p1Minutes = document.getElementById('p1-min').innerHTML;
+        p1Minutes = parseInt(p1Minutes, 10);
+        if (seconds == 60) {
+            p1Minutes = p1Minutes - 1;
+            document.getElementById('p1-min').innerHTML = p1Minutes;
+        }
         seconds--;
-        console.log({seconds});
-        console.log({p1Minutes});
-    }
-    if (p1Minutes == 0) {
-        clearInterval(start());
-    }
 
-  }, 1000);
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
+        document.getElementById('p1-sec').innerHTML = seconds;
+
+        seconds = parseInt(seconds, 10);
+
+        if (p1Minutes < 10) {
+            p1Minutes = '0' + p1Minutes;
+        }
+        document.getElementById('p1-min').innerHTML = p1Minutes;
+
+        p1Minutes = parseInt(p1Minutes, 10);
+
+        if (seconds == 0) {
+            seconds = 60;
+        }
+
+        if (p1Minutes == 0) {
+            clearInterval(start());
+        }
+
+    }, 1000);
 }
 
     /*
@@ -126,18 +134,11 @@ let countdown = setInterval(
 // start();
 
 
-
-function timeOutPlayer() {
-    clearInterval(timeId);
-}
-
-/*
 function stop() {
   playing = false;
 }
 
-*/
-  /*
+/*
 function switchPlayer() {
   document.onkeydown = function(event) {
     if (event) {
@@ -150,4 +151,4 @@ function switchPlayer() {
       }
     }
   }
-  */
+*/
