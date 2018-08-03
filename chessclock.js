@@ -59,26 +59,38 @@ function reset() {
   p2Time.innerHTML = 10;
   let p2Sec =  document.getElementById('p2-sec');
   p2Sec.innerHTML = '00';
+  console.log("time reset");
 }
 
 
 // Start the clock.
 function start() {
-    console.log(document.getElementById('p1-min').innerHTML);
+let countdown = setInterval(
+    function() {
+    let p1Minutes = document.getElementById('p1-min').innerHTML;
+    console.log(p1Minutes);
     console.log(document.getElementById('p1-sec').innerHTML);
-    let minutes = Math.round((seconds - 30) / 60);
-    console.log({minutes});
-    let remainingSeconds = seconds % 60;
-    console.log({remainingSeconds});
-    
-    if (remainingSeconds < 10) {
-        remainingSeconds = '0' + remainingSeconds;
+    console.log(seconds); 
+    seconds--;
+    console.log(seconds); 
+
+    if (p1Minutes < 10) {
+        p1Minutes = '0' + p1Minutes;
     }
-    if (minutes < 10) {
-        minutes = '0' + minutes;
+    document.getElementById('p1-sec').innerHTML = seconds;
+    document.getElementById('p1-min').innerHTML = p1Minutes;
+
+    function countdown(sec) {
+        seconds--;
+        console.log({seconds});
+        console.log({p1Minutes});
     }
-    document.getElementById('p1-sec').innerHTML = remainingSeconds;
-    document.getElementById('p1-min').innerHTML = minutes;
+    if (p1Minutes == 0) {
+        clearInterval(start());
+    }
+
+  }, 1000);
+}
 
     /*
     if (seconds == 0) {
@@ -110,7 +122,6 @@ function start() {
     }
       timeOutPlayer();
     */
-}
 // var timeId = setInterval(countdown, 1000);
 // start();
 
