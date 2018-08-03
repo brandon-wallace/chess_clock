@@ -11,6 +11,9 @@ let decreaseP2Time = document.getElementById('p2-min');
 function increaseP1() {
   let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) + 1;
+  if (min >= 99) {
+      min = 99;
+  }
   if (min < 10) {
     min = '0' + min;
   }
@@ -21,6 +24,10 @@ function increaseP1() {
 function decreaseP1() {
   let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) - 1;
+  console.log(min);
+  if (min <= 1) {
+      min = 1;
+  }
   if (min < 10) {
     min = '0' + min;
   }
@@ -93,8 +100,8 @@ let countdown = setInterval(
             seconds = 60;
         }
 
-        if (p1Minutes == 0) {
-            clearInterval(start());
+        if (p1Minutes == 0 && seconds == 0) {
+            clearInterval(countdown());
         }
 
     }, 1000);
