@@ -3,11 +3,11 @@ let increaseP1Time = document.getElementById('p1-min');
 let decreaseP1Time = document.getElementById('p1-min');
 let increaseP2Time = document.getElementById('p2-min');
 let decreaseP2Time = document.getElementById('p2-min');
-let rstbtn = document.getElementById('rst-btn');
-let srtbtn = document.getElementById('strt-btn');
+// let rstbtn = document.getElementById('rst-btn');
+// let srtbtn = document.getElementById('strt-btn');
 
 
-// Player buttons
+// Set player1's time.
 function increaseP1() {
   let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) + 1;
@@ -28,6 +28,7 @@ function decreaseP1() {
 }
 
 
+// Set player2's time.
 function increaseP2() {
   let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) + 1;
@@ -46,9 +47,9 @@ function decreaseP2() {
   }
   decreaseP2Time.innerHTML = min;
 }
-// END Player buttons
 
 
+// Reset Player's clocks.
 function reset() {
   let p1Time = document.getElementById('p1-min');
   p1Time.innerHTML = 10;
@@ -60,13 +61,26 @@ function reset() {
   p2Sec.innerHTML = '00';
 }
 
-function start() {
-    let minutes = Math.round((seconds - 30) / 60);
-    let remainingSeconds = seconds % 60;
 
+// Start the clock.
+function start() {
+    console.log(document.getElementById('p1-min').innerHTML);
+    console.log(document.getElementById('p1-sec').innerHTML);
+    let minutes = Math.round((seconds - 30) / 60);
+    console.log({minutes});
+    let remainingSeconds = seconds % 60;
+    console.log({remainingSeconds});
+    
+    if (remainingSeconds < 10) {
+        remainingSeconds = '0' + remainingSeconds;
+    }
+    if (minutes < 10) {
+        minutes = '0' + minutes;
+    }
     document.getElementById('p1-sec').innerHTML = remainingSeconds;
     document.getElementById('p1-min').innerHTML = minutes;
 
+    /*
     if (seconds == 0) {
         clearInterval(start);
         document.getElementById('p1-min').innerHTML = '00';
@@ -74,8 +88,10 @@ function start() {
     } else {
         seconds--;
     }
+    */
     
-    let timerId = setInterval('start()', 1000);
+    // let timerId = setInterval('start()', 1000);
+    // setTimeout('start()', 5000);
     /*
     let min = document.getElementById('p1-min').innerHTML;
     let sec = document.getElementById('p1-sec').innerHTML;
