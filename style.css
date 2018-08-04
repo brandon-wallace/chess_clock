@@ -41,19 +41,15 @@ nav li a {
     color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
-    /* border: 2px solid red; */
 }
-
 /* END menu bar page navigation */
 
 
 .container {
     margin-top: 60px;
-    /* border: 2px solid red; */
 }
 
 .content {
-    /* border: 2px solid blue; */
     width: 50%;
     margin: auto;
     padding: 2%;
@@ -73,7 +69,6 @@ nav li a {
         2px -2px 0 #ffffff,
         -2px 2px 0 #ffffff,
         2px 2px 0 #ffffff;
-    /* border: 2px solid red; */
 }
 
 
@@ -156,7 +151,6 @@ div h1 {
 
 
 /* quotes page */
-
 h1 {
     color: #2E2E2E;
 }
@@ -200,12 +194,10 @@ h1 {
     font-weight: bold;
     padding: 2%;
 }
-
 /* END quotes page */
 
 
 /* chess links */
-
 .link-wrapper {
     display: flex;
     background-color: #D8D8D8;
@@ -219,7 +211,6 @@ h1 {
 
 .links-col {
     flex: 1;
-    /*padding: 2% 1% 2% 3%;*/
     padding: 5% 3%;
 }
 
@@ -261,12 +252,10 @@ h1 {
     cursor: pointer;
     text-decoration: none;
 }
-
 /* END chess links */
 
 
 /* about page */
-
 .contact {
     padding: 2%;
     text-align: center;
@@ -313,12 +302,10 @@ my-email::before {
     opacity: 0;
   }
 }
-
 /* END about page */
 
 
 /* 404 error page */
-
 .error-img {
     text-align: center;
     font-size: 100%;
@@ -328,7 +315,6 @@ my-email::before {
 .error-img h1 {
     font-size: 9em;
     padding: 1%;
-    /* font-family: OldSansBlack, Arial, sans-serif; */
     font-family: Arial, sans-serif;
 }
 
@@ -338,8 +324,39 @@ my-email::before {
 }
 
 .error-img img {
-    /* margin: 60px auto; */
     margin: auto;
 }
-
 /* END 404 error page */
+
+
+/* media queries */
+@media screen and (max-width: 850px) {
+    .players {
+        display: flex;
+        flex-direction: column;
+        justify-content; space-around;
+        padding: 1% 4%;
+    }
+    .p1, .p2 {
+        margin: 0px auto;
+    }
+    nav ul {
+        width: 50%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    nav li {
+        padding: 4%;
+    }
+
+    .p1 {
+        margin-top: 9%;
+    }
+    .banner,
+    .crowns {
+        display: none;
+    }
+}
+/* END media queries */
