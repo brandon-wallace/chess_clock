@@ -114,13 +114,13 @@ function start() {
 
         console.log({p1Minutes, seconds});
 
-        if (p1Minutes == 0 && seconds == 0) {
+        if (p1Minutes === 0 && seconds === 0) {
             document.getElementById('timeout1').style.color = "#ff0000";
             clearInterval(countdown);
             resetbtn.disabled = false;
             startbtn.disabled = false;
         }
-        if (seconds == 0) {
+        if (seconds === 0) {
             seconds = 60;
         }
         document.onkeydown = function(event) {
@@ -168,15 +168,16 @@ function swap() {
 
         console.log({p2Minutes, seconds});
 
-        if (p2Minutes == 0 && seconds == 0) {
+        if (p2Minutes === 0 && seconds === 0) {
             document.getElementById('timeout2').style.color = "#ff0000";
             clearInterval(countdown);
             resetbtn.disabled = false;
             startbtn.disabled = false;
         }
-        if (seconds == 0) {
+        if (seconds === 0) {
             seconds = 60;
         }
+        /*
         document.onkeydown = function(event) {
         let spacebar = event.which || event.keyCode;
             if (spacebar === 32) {
@@ -188,6 +189,7 @@ function swap() {
                 start();
             }
         };
+        */
     }, 1000);
 }
 
