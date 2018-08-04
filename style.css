@@ -237,6 +237,7 @@ h1 {
 }
 
 .links-col a {
+    color: #0080FF;
     cursor: pointer;
     text-decoration: none;
 }
@@ -256,6 +257,10 @@ h1 {
 
 
 /* about page */
+.contact img {
+  width: 100%;
+}
+
 .contact {
     padding: 2%;
     text-align: center;
