@@ -1,10 +1,11 @@
 let seconds = 60;
+let currentPlayer = 1;
 let increaseP1Time = document.getElementById('p1-min');
 let decreaseP1Time = document.getElementById('p1-min');
 let increaseP2Time = document.getElementById('p2-min');
 let decreaseP2Time = document.getElementById('p2-min');
-// let rstbtn = document.getElementById('rst-btn');
-// let srtbtn = document.getElementById('strt-btn');
+let resetbtn = document.getElementById('rst-btn');
+let startbtn = document.getElementById('strt-btn');
 
 
 // Set player1's time.
@@ -64,6 +65,8 @@ function decreaseP2() {
 
 // Reset Player's clocks.
 function reset() {
+  document.getElementById('timeout1').style.color = "#000000";
+  document.getElementById('timeout2').style.color = "#FFFFFF";
   let p1Time = document.getElementById('p1-min');
   p1Time.innerHTML = 10;
   let p1Sec =  document.getElementById('p1-sec');
@@ -77,8 +80,10 @@ function reset() {
 
 // Start the clock.
 function start() {
+    "use strict";
 let countdown = setInterval(function() {
-    console.log(typeof countdown);
+        resetbtn.disabled = true;
+        startbtn.disabled = true;
 
         let p1Minutes = document.getElementById('p1-min').innerHTML;
         p1Minutes = parseInt(p1Minutes, 10);
@@ -107,11 +112,20 @@ let countdown = setInterval(function() {
         if (p1Minutes == 0 && seconds == 0) {
             document.getElementById('timeout1').style.color = "#ff0000";
             clearInterval(countdown);
+            resetbtn.disabled = false;
+            startbtn.disabled = false;
         }
         if (seconds == 0) {
             seconds = 60;
         }
-
+        document.onkeydown = function(event) {
+        let spacebar = event.which || event.keyCode;
+            if (spacebar === 32) {
+                console.log("SPACEBAR PRESSED!");
+                currentPlayer = currentPlayer == 1 ? 2 : 1;
+                console.log({currentPlayer});
+            }
+        };
 
     }, 1000);
 }
