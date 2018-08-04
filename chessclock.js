@@ -1,11 +1,16 @@
+"use strict";
+
 let seconds = 60;
-let currentPlayer = 1;
+let playing = -1;
+let currentPlayer = 1; // player1: 1, player2: 2
 let increaseP1Time = document.getElementById('p1-min');
 let decreaseP1Time = document.getElementById('p1-min');
 let increaseP2Time = document.getElementById('p2-min');
 let decreaseP2Time = document.getElementById('p2-min');
-let resetbtn = document.getElementById('rst-btn');
-let startbtn = document.getElementById('strt-btn');
+let resetbtn = document.getElementById('reset-btn');
+let startbtn = document.getElementById('start-btn');
+let pausebtn = document.getElementById('pause-btn');
+let swapbtn = document.getElementById('swapplayer-btn');
 
 
 // Set player1's time.
@@ -80,8 +85,8 @@ function reset() {
 
 // Start the clock.
 function start() {
-    "use strict";
-let countdown = setInterval(function() {
+    if (playing == -1) {
+    let countdown = setInterval(function() {
         resetbtn.disabled = true;
         startbtn.disabled = true;
 
@@ -124,61 +129,69 @@ let countdown = setInterval(function() {
                 console.log("SPACEBAR PRESSED!");
                 currentPlayer = currentPlayer == 1 ? 2 : 1;
                 console.log({currentPlayer});
+                clearInterval(countdown);
+            } else { 
+                start();
             }
         };
 
     }, 1000);
+    }
 }
 
-    /*
-    if (seconds == 0) {
-        clearInterval(start);
-        document.getElementById('p1-min').innerHTML = '00';
-        document.getElementById('p1-sec').innerHTML = '00';
-    } else {
-        seconds--;
-    }
-    */
-    
-    // let timerId = setInterval('start()', 1000);
-    // setTimeout('start()', 5000);
-    /*
-    let min = document.getElementById('p1-min').innerHTML;
-    let sec = document.getElementById('p1-sec').innerHTML;
-    sec = seconds;
-    console.log(min);
-    console.log(sec);
-    document.getElementById('p1-sec').innerHTML = sec;
+function swap() {
+    let countdown = setInterval(function() {
+        resetbtn.disabled = true;
+        startbtn.disabled = true;
 
-    function countdown() {
-      sec -= 1;
-      document.getElementById('p1-sec').innerHTML = sec;
-      if (sec == 0) {
-        min = min - 1;
-        document.getElementById('p1-min').innerHTML = min;
-      }
-    }
-      timeOutPlayer();
-    */
-// var timeId = setInterval(countdown, 1000);
-// start();
+        let p2Minutes = document.getElementById('p2-min').innerHTML;
+        p2Minutes = parseInt(p2Minutes, 10);
+        if (seconds == 60) {
+            p2Minutes = p2Minutes - 1;
+            document.getElementById('p2-min').innerHTML = p2Minutes;
+        }
+        seconds--;
+
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
+        document.getElementById('p2-sec').innerHTML = seconds;
+
+        seconds = parseInt(seconds, 10);
+
+        if (p2Minutes < 10) {
+            p2Minutes = '0' + p2Minutes;
+        }
+        document.getElementById('p2-min').innerHTML = p2Minutes;
+
+        p2Minutes = parseInt(p2Minutes, 10);
+
+        console.log({p2Minutes, seconds});
+
+        if (p2Minutes == 0 && seconds == 0) {
+            document.getElementById('timeout2').style.color = "#ff0000";
+            clearInterval(countdown);
+            resetbtn.disabled = false;
+            startbtn.disabled = false;
+        }
+        if (seconds == 0) {
+            seconds = 60;
+        }
+        document.onkeydown = function(event) {
+        let spacebar = event.which || event.keyCode;
+            if (spacebar === 32) {
+                console.log("SPACEBAR PRESSED!");
+                currentPlayer = currentPlayer == 1 ? 2 : 1;
+                console.log({currentPlayer});
+                clearInterval(countdown);
+            } else { 
+                start();
+            }
+        };
+    }, 1000);
+}
 
 
 function stop() {
   playing = false;
 }
-
-/*
-function switchPlayer() {
-  document.onkeydown = function(event) {
-    if (event) {
-      if (event.keyCode == 32 || event.which == 32) {
-        if (status == 1) {
-          stop();
-        } else {
-          start();
-        }
-      }
-    }
-  }
-*/
