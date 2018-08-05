@@ -135,24 +135,31 @@ function start() {
                 currentPlayer = currentPlayer == 1 ? 2 : 1;
                 // console.log({currentPlayer});
                 clearInterval(countdown);
+                /*
             } else { 
                 start();
+                */
             }
         };
 
     }, 1000);
+    } else {
+        player2Time();
     }
 }
 
 
-function swap() {
+function player2Time() {
+    if (currentPlayer == 2) {
     let countdown = setInterval(function() {
         resetbtn.disabled = true;
         startbtn.disabled = true;
+        increaseP1 = null;
+        decreaseP1 = null;
 
         let p2Minutes = document.getElementById('p2-min').innerHTML;
         p2Minutes = parseInt(p2Minutes, 10);
-        console.log(p2Minutes);
+        console.log({p2Minutes});
         if (seconds == 60) {
             p2Minutes = p2Minutes - 1;
             document.getElementById('p2-min').innerHTML = p2Minutes;
@@ -184,7 +191,6 @@ function swap() {
         if (seconds === 0) {
             seconds = 60;
         }
-        /*
         document.onkeydown = function(event) {
         let spacebar = event.which || event.keyCode;
             if (spacebar === 32) {
@@ -196,14 +202,16 @@ function swap() {
                 start();
             }
         };
-        */
     }, 1000);
+    }
 }
 
 
+/*
 function stop() {
-    console.log(stop);
+    console.log({stop});
     console.log("PAUSED?");
     clearInterval(countdown);
     pausebtn.innerHTML = 'start';
 }
+*/
