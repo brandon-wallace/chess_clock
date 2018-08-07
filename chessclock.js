@@ -16,6 +16,7 @@ let swapbtn = document.getElementById('swapplayer-btn');
 
 // Set player1's time.
 function increaseP1() {
+    console.log('-----------INCREASE P1------------');
   let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) + 1;
   if (min >= 99) {
@@ -29,6 +30,7 @@ function increaseP1() {
 
 
 function decreaseP1() {
+    console.log('-----------DECREASE P1------------');
   let min = document.getElementById('p1-min').innerHTML;
   min = parseInt(min, 10) - 1;
   console.log(min);
@@ -44,6 +46,7 @@ function decreaseP1() {
 
 // Set player2's time.
 function increaseP2() {
+    console.log('-----------INCREASE P2------------');
   let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) + 1;
   if (min >= 99) {
@@ -57,6 +60,7 @@ function increaseP2() {
 
 
 function decreaseP2() {
+    console.log('-----------DECREASE P2------------');
   let min = document.getElementById('p2-min').innerHTML;
   min = parseInt(min, 10) - 1;
   if (min <= 1) {
@@ -71,6 +75,7 @@ function decreaseP2() {
 
 // Reset Player's clocks.
 function reset() {
+    console.log('-----------RESET------------');
   document.getElementById('timeout1').style.color = "#000000";
   document.getElementById('timeout2').style.color = "#FFFFFF";
   let p1Time = document.getElementById('p1-min');
@@ -86,7 +91,8 @@ function reset() {
 
 // Start the clock.
 function start() {
-        
+    console.clear();
+    console.log('------------START CLOCK-------------'); 
     if (currentPlayer == 1) {
     let countdown = setInterval(function() {
         // Disable buttons while clock runs.
@@ -150,6 +156,7 @@ function start() {
 
 
 function player2Time() {
+    console.log('------------START PLAYER 2-------------');
     if (currentPlayer == 2) {
     let countdown = setInterval(function() {
         resetbtn.disabled = true;
