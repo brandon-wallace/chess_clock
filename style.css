@@ -137,6 +137,13 @@ div h1 {
     border: 2px solid #000000;
     border-radius: 5px;
     margin: 10px 35px;
+    transition-property: background-color;
+    transition-duration: 1s;
+}
+
+.btn:hover {
+    color: #D8D8D8;
+    background-color: #6E6E6E;
 }
 
 .tggl {
@@ -148,6 +155,14 @@ div h1 {
     width: 400px;
     border: 2px solid #000000;
     border-radius: 5px;
+}
+
+#signature {
+    color: #000000;
+    margin: 0px;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
 }
 /* END chess clock for players */
 
