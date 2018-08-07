@@ -115,9 +115,11 @@ nav li a {
     font-size: 200%;
 }
 
-.tm-ctl img {
-    margin: 0px auto;
+.tm-ctl {
+    display: flex;
+    justify-content: center;
 }
+
 div h1 {
     margin: 0;
 }
@@ -125,6 +127,28 @@ div h1 {
 .game-options {
     text-align: center;
     padding: 20px;
+}
+
+#plus1 {
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    background: url('images/plus1.png') 0 0;
+}
+
+#plus1:hover {
+    background: url('images/plus1.png') -64px -64px;
+}
+
+#minus1 {
+    left: 0px;
+    width: 64px;
+    height: 64px;
+    background: url('images/minus1.png') 0 0;
+}
+
+#minus1:hover {
+    background: url('images/minus1.png') -64px -64px;
 }
 
 .btn {
