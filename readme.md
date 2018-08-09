@@ -1,8 +1,8 @@
-## Work in progress
+## Work in progress...
 
-# An online chess timer
+# An online chess clock
 
-## An online chess timer using HTML, CSS and Javascript. ##
+## An online chess clock using HTML, CSS and Javascript. ##
 
 
 ![chess clock screenshot](screenshot.jpg)
