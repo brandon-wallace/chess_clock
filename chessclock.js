@@ -13,6 +13,15 @@ let pausebtn = document.getElementById('pause-btn');
 let swapbtn = document.getElementById('swap-btn');
 
 
+const padZero = (number) => {
+  if (number < 10) {
+    return '0' + number;
+  } else {
+    return number;
+  }
+}
+
+
 // Set player1's time.
 function increaseP1() {
     console.log('-----------INCREASE P1------------');
@@ -21,10 +30,7 @@ function increaseP1() {
   if (min >= 99) {
       min = 99;
   }
-  if (min < 10) {
-    min = '0' + min;
-  }
-  increaseP1Time.innerHTML = min;
+  increaseP1Time.innerHTML = padZero(min);
 }
 
 
@@ -36,10 +42,7 @@ function decreaseP1() {
   if (min <= 1) {
       min = 1;
   }
-  if (min < 10) {
-    min = '0' + min;
-  }
-  decreaseP1Time.innerHTML = min;
+  decreaseP1Time.innerHTML = padZero(min);
 }
 
 
@@ -51,10 +54,7 @@ function increaseP2() {
   if (min >= 99) {
       min = 99;
   }
-  if (min < 10) {
-    min = '0' + min;
-  }
-  increaseP2Time.innerHTML = min;
+  increaseP2Time.innerHTML = padZero(min);
 }
 
 
@@ -65,11 +65,9 @@ function decreaseP2() {
   if (min <= 1) {
       min = 1;
   }
-  if (min < 10) {
-    min = '0' + min;
-  }
-  decreaseP2Time.innerHTML = min;
+  decreaseP2Time.innerHTML = padZero(min);
 }
+
 
 
 // Reset Player's clocks.
@@ -114,16 +112,10 @@ function p1Time() {
       }
       p1sec = p1sec - 1;
 
-      if (p1sec < 10) {
-          p1sec = '0' + p1sec;
-      }
-      document.getElementById('p1-sec').innerHTML = p1sec;
+      document.getElementById('p1-sec').innerHTML = padZero(p1sec);
       p1sec = parseInt(p1sec, 10);
 
-      if (p1min < 10) {
-          p1min = '0' + p1min;
-      }
-      document.getElementById('p1-min').innerHTML = p1min;
+      document.getElementById('p1-min').innerHTML = padZero(p1min);
       p1min = parseInt(p1min, 10);
 
       if (p1min === 0 && p1sec === 0) {
