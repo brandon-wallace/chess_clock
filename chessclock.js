@@ -148,16 +148,10 @@ function p2Time() {
       }
       p2sec = p2sec - 1;
 
-      if (p2sec < 10) {
-          p2sec = '0' + p2sec;
-      }
-      document.getElementById('p2-sec').innerHTML = p2sec;
+      document.getElementById('p2-sec').innerHTML = padZero(p2sec);
       p2sec = parseInt(p2sec, 10);
 
-      if (p2min < 10) {
-          p2min = '0' + p2min;
-      }
-      document.getElementById('p2-min').innerHTML = p2min;
+      document.getElementById('p2-min').innerHTML = padZero(p2min);
 
       if (p2min === 0 && p2sec === 0) {
           document.getElementById('timeout2').style.color = "#ff0000";
