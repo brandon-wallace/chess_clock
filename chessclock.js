@@ -25,7 +25,6 @@ function padZero(number) {
 
 // Increase player1's time.
 function increaseP1() {
-    console.log('----INCREASE---');
     if (playing === true) return;
     let min = document.getElementById('p1-min').innerHTML;
     min = parseInt(min, 10) + 1;
@@ -38,20 +37,18 @@ function increaseP1() {
 
 // Decrease player1's time.
 function decreaseP1() {
-    console.log('----DECREASE---');
     if (playing === true) return;
     let min = document.getElementById('p1-min').innerHTML;
     min = parseInt(min, 10) - 1;
     if (min <= 1) {
         min = 1;
     }
-  decreaseP1Time.innerHTML = padZero(min);
+    decreaseP1Time.innerHTML = padZero(min);
 }
 
 
 // Increase player2's time.
 function increaseP2() {
-    console.log('----INCREASE---');
     if (playing === true) return;
     let min = document.getElementById('p2-min').innerHTML;
     min = parseInt(min, 10) + 1;
@@ -64,7 +61,6 @@ function increaseP2() {
 
 // Decrease player2's time.
 function decreaseP2() {
-    console.log('----DECREASE---');
     if (playing === true) return;
     let min = document.getElementById('p2-min').innerHTML;
     min = parseInt(min, 10) - 1;
@@ -77,7 +73,6 @@ function decreaseP2() {
 
 // Reset clocks to default settings.
 function reset() {
-    console.log('----RESET---');
     document.getElementById('timeout1').style.color = "#000000";
     document.getElementById('timeout2').style.color = "#FFFFFF";
     let p1Time = document.getElementById('p1-min');
@@ -95,14 +90,12 @@ function reset() {
 
 // Toggle from player to player.
 function swap() {
-    console.log('----SWITCH PLAYER---');
     currentPlayer = currentPlayer === 0 ? 1 : 0;
 }
 
 
 // Pause the clocks.
 function pause() {
-    console.log('----PAUSE---');
     playing = playing == true ? false : true;
     if (playing == false ) {
         pausebtn.value = 'RESUME';
@@ -137,7 +130,6 @@ let p2time = new Clock('p2-min', document.getElementById('p2-min').innerHTML);
 // Start countdown.
 function start() {
     playing = true;
-    console.log(playing);
     let timer = setInterval(function() {
         if (currentPlayer === 0) {
 
