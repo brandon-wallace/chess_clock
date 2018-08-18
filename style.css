@@ -36,8 +36,12 @@ nav ul {
     list-style: none;
 }
 
+nav ul li {
+    text-align: center;
+    width: 20%;
+}
+
 nav li a {
-    padding: 15px;
     color: #FFFFFF;
     font-weight: bold;
     text-decoration: none;
@@ -225,7 +229,6 @@ h1 {
 }
 .names {
     text-align: right;
-
 }
 
 .names p {
