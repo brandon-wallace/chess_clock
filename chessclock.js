@@ -153,6 +153,7 @@ function start() {
                         document.getElementById('timeout1').style.color = "#FF0000";
                         timeout.play();
                         clearInterval(timer);
+                        playing = false;
                     }
                     p1sec = 60;
                 }
@@ -180,6 +181,7 @@ function start() {
                         document.getElementById('timeout2').style.color = "#FF0000";
                         timeout.play();
                         clearInterval(timer);
+                        playing = false;
                     }
                     p2sec = 60;
                 }
