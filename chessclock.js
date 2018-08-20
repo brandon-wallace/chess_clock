@@ -130,6 +130,7 @@ let p2time = new Clock('p2-min', document.getElementById('p2-min').innerHTML);
 // Start countdown.
 function start() {
     playing = true;
+    let timeout = new Audio('audio/timeout.mp3');
     let timer = setInterval(function() {
         if (currentPlayer === 0) {
 
@@ -148,6 +149,7 @@ function start() {
                     if (p1sec === 0 && p1time.min === 0) {
                         resetbtn.disabled = false;
                         document.getElementById('timeout1').style.color = "#FF0000";
+                        timeout.play();
                         clearInterval(timer);
                     }
                     p1sec = 60;
@@ -174,6 +176,7 @@ function start() {
                     if (p2sec == 0 && p2time.min == 0) {
                         resetbtn.disabled = false;
                         document.getElementById('timeout2').style.color = "#FF0000";
+                        timeout.play();
                         clearInterval(timer);
                     }
                     p2sec = 60;
