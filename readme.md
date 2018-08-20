@@ -8,3 +8,8 @@ Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_cl
 
 
 ![chess clock screenshot](screenshot.jpg)
+
+
+## License: ##
+
+This project is licensed under the GPL-3.0 License.
