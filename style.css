@@ -7,7 +7,6 @@ html, body {
     color: #FFFFFF;
     background-color: #999999;
     background-image: url('images/chessboardbg1.png');
-    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
     font-family: Helvetica, sans-serif;
