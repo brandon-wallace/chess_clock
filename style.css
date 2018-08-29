@@ -4,34 +4,33 @@
 }
 
 html, body {
+    margin: 0;
+    padding: 0;
     color: #FFFFFF;
     background-color: #999999;
+    font-family: Helvetica, sans-serif;
     background-image: url('images/chessboardbg1.png');
     background-position: center center;
     background-repeat: no-repeat;
-    font-family: Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 
 /* menu bar page navigation */
 nav {
-    opacity: .5;
     padding: 15px;
     position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
-    background-color: #000000;
+    background-color: hsla(000, 000%, 000%, 0.5);
 }
 
 nav ul {
     width: 50%;
     margin: auto;
+    list-style: none;
     display: flex;
     justify-content: space-between;
-    list-style: none;
 }
 
 nav ul li {
@@ -41,6 +40,7 @@ nav ul li {
 
 nav li a {
     color: #FFFFFF;
+    font-size: 1.2em;
     font-weight: bold;
     text-decoration: none;
 }
@@ -58,10 +58,10 @@ nav li a {
 }
 
 .banner {
-    text-align: center;
-    font-size: 400%;
-    color: #000000;
     padding: 10px;
+    color: #000000;
+    font-size: 400%;
+    text-align: center;
     text-shadow:
         0 2px 0 #ffffff,
         2px 0 0 #ffffff,
@@ -81,12 +81,12 @@ nav li a {
 }
 
 .p1 {
-    background-color: #FFFFFF; 
     padding: 1% 4%;
-    text-align: center;
     font-size: 2em;
+    text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: #FFFFFF; 
     border-bottom: 10px solid #0080FF;
 }
 
@@ -100,10 +100,10 @@ nav li a {
 }
 
 .p2 {
-    background-color: #2E2E2E;
     padding: 1% 4%;
-    text-align: center;
     font-size: 2em;
+    text-align: center;
+    background-color: #2E2E2E;
     display: flex;
     flex-direction: column;
     border-bottom: 10px solid #0080FF;
@@ -154,15 +154,15 @@ div h1 {
 }
 
 .btn {
-    background-color: #EEEEEE;
+    padding: 15px;
     color: #000000;
-    display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    padding: 15px;
-    border: 2px solid #000000;
-    border-radius: 5px;
     margin: 10px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    border: 2px solid #000000;
+    background-color: #EEEEEE;
     transition-property: background-color;
     transition-duration: 1s;
     width: 100px;
@@ -174,19 +174,19 @@ div h1 {
 }
 
 .tggl {
+    width: 410px;
+    padding: 15px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    padding: 15px;
     text-align: center;
-    width: 410px;
     border: 2px solid #000000;
     border-radius: 5px;
 }
 
 #signature {
-    color: #000000;
     margin: 0px;
+    color: #000000;
     position: fixed;
     bottom: 0px;
     right: 5px;
@@ -221,9 +221,9 @@ h1 {
 }
 
 .quote-bg {
+    margin-bottom: 60px;
     background-color: #D8D8D8;
     border-bottom: 10px solid #0080FF;
-    margin-bottom: 60px;
 }
 .names {
     text-align: right;
@@ -232,10 +232,10 @@ h1 {
 .names p {
     margin: 0;
     color: #FFFFFF;
-    background-color: #0080FF;
     display: inline;
     font-weight: bold;
     padding: 2% 4%;
+    background-color: #0080FF;
 }
 /* END quotes page */
 
@@ -243,8 +243,8 @@ h1 {
 /* chess links */
 .link-wrapper {
     display: flex;
-    background-color: #D8D8D8;
     color: #2E2E2E;
+    background-color: #D8D8D8;
     border-bottom: 10px solid #0080FF;
 }
 
@@ -334,15 +334,15 @@ my-email::before {
 .donate {
     padding: 1.5%;
     font-weight: bold;
+    border-radius: 10px;
     background-color: #0080FF;
     border: 4px solid #333333;
-    border-radius: 10px;
 }
 
 .donate a {
+    color: #FFFFFF;
     text-decoration: none;
     animation: blinker 2s linear infinite;
-    color: #FFFFFF;
 }
 
 @keyframes blinker {
@@ -355,14 +355,14 @@ my-email::before {
 
 /* 404 error page */
 .error-img {
-    text-align: center;
     font-size: 100%;
+    text-align: center;
     letter-spacing: 1em;
 }
 
 .error-img h1 {
-    font-size: 9em;
     padding: 1%;
+    font-size: 9em;
     font-family: Arial, sans-serif;
 }
 
