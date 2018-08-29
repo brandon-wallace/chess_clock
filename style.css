@@ -378,12 +378,26 @@ my-email::before {
 
 
 /* media queries */
+@media screen and (max-width: 1050px) {
+    .link-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .h1-links {
+        margin-top: 2%;
+    }
+    .content {
+        width: 70%;
+    }
+}
+
 @media screen and (max-width: 960px) {
     .quotes {
         display: flex;
         flex-direction: column;
     }
 }
+
 @media screen and (max-width: 850px) {
     .players {
         display: flex;
