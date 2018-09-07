@@ -26,7 +26,7 @@ function padZero(number) {
 
 // Increase player1's time.
 function increaseP1() {
-    if (playing === true) return;
+    if (playing) return;
     let min = document.getElementById('p1-min').innerHTML;
     min = parseInt(min, 10) + 1;
     if (min >= 99) {
@@ -38,7 +38,7 @@ function increaseP1() {
 
 // Decrease player1's time.
 function decreaseP1() {
-    if (playing === true) return;
+    if (playing) return;
     let min = document.getElementById('p1-min').innerHTML;
     min = parseInt(min, 10) - 1;
     if (min <= 1) {
@@ -50,7 +50,7 @@ function decreaseP1() {
 
 // Increase player2's time.
 function increaseP2() {
-    if (playing === true) return;
+    if (playing) return;
     let min = document.getElementById('p2-min').innerHTML;
     min = parseInt(min, 10) + 1;
     if (min >= 99) {
@@ -62,7 +62,7 @@ function increaseP2() {
 
 // Decrease player2's time.
 function decreaseP2() {
-    if (playing === true) return;
+    if (playing) return;
     let min = document.getElementById('p2-min').innerHTML;
     min = parseInt(min, 10) - 1;
     if (min <= 1) {
@@ -98,7 +98,7 @@ function swap() {
 // Pause the clocks.
 function pause() {
     playing = playing == true ? false : true;
-    if (playing == false ) {
+    if (playing) {
         pausebtn.value = 'RESUME';
     } else {
         pausebtn.value = 'PAUSE';
