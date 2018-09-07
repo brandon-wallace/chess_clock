@@ -97,11 +97,11 @@ function swap() {
 
 // Pause the clocks.
 function pause() {
-    playing = playing == true ? false : true;
+    playing = !playing;
     if (playing) {
-        pausebtn.value = 'RESUME';
-    } else {
         pausebtn.value = 'PAUSE';
+    } else {
+        pausebtn.value = 'RESUME';
     }
 }
 
