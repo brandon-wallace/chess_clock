@@ -193,13 +193,12 @@ function start() {
     }, 1000); 
 }
 
-// Change turns pressing the spacebar
+// Change turns pressing the spacebar.
 document.addEventListener("keypress", e => {
-    console.log('code ' + e.keyCode)
-    if(e.keyCode === 32) {
+    if(e.keyCode === 32 || e.which === 32) {
         swap()
     }
     if(!playing) {
         pause()
     }
-})
+});
