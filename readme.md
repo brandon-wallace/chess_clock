@@ -6,6 +6,13 @@
 
 Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_clock/)
 
+## Features:
+ * CSS sprites
+ * Media queries
+ * Audio
+ * Transitional hover effects
+ * A custom font
+
 
 ![chess clock screenshot](screenshot.jpg)
 
