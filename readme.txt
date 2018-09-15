@@ -6,6 +6,13 @@ An online chess clock using Javascript, HTML, and CSS.
 
 Website: https://iambw.github.io/chess_clock/
 
+Features:
+ * CSS sprites
+ * Media queries
+ * Audio
+ * Transitional hover effects
+ * A custom font
+ * Numbers change to red on timeout
 
 License: 
 

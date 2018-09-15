@@ -12,6 +12,7 @@ Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_cl
  * Audio
  * Transitional hover effects
  * A custom font
+ * Numbers change to red on timeout
 
 
 ![chess clock screenshot](screenshot.jpg)
