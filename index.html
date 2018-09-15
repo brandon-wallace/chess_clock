@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en"> 
+
     <head>
+
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">  
       <meta name="description" content="Chess Timer">
       <link rel="icon" type="image/svg" href="images/favicon.svg">
       <link rel="stylesheet" type="text/css" href="style.css">
       <title>Chess Clock</title>
+
     </head>
+
     <body>
 
       <!-- menu bar navigation -->
@@ -30,8 +34,10 @@
 
         <!-- player 1 -->
         <div class="p1">
+
           <img class="crowns" src="images/wK.svg" alt="light_color_queen" width="150" height="150">
           <h1>PLAYER 1</h1>
+
           <div class="digits">
             <h1 id="timeout1"><span id="p1-min">10</span>:<span id="p1-sec">00</span></h1>
           </div>
@@ -45,8 +51,10 @@
 
         <!-- player 2 -->
         <div class="p2">
+
           <img class="crowns" src="images/bK.svg" alt="dark_color_queen" width="150" height="150">
           <h1>PLAYER 2</h1>
+
           <div class="digits">
             <h1 id="timeout2"><span id="p2-min">10</span>:<span id="p2-sec">00</span></h1>
           </div>
@@ -55,6 +63,7 @@
             <div id="plus1" onclick="increaseP2()" title="Increase Time"></div>
             <div id="minus1" onclick="decreaseP2()" title="Decrease Time"></div>
           </div>
+
         </div><!-- END player 2 -->
 
         </div><!-- END players -->
@@ -65,10 +74,14 @@
           <input type="button" value="PAUSE" class="btn" id="pause-btn">
           <input type="button" value="SWITCH" class="btn tggl" onclick="swap()" id="swap-btn">
         </div>
+
         <p id="signature">created by: brandon_wallace</p>
+
       </div><!-- END wrapper -->
 
     <script type="text/javascript" src="chessclock.js"></script> 
+
     </body>
+
 </html>
 
