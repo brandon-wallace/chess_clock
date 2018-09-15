@@ -90,6 +90,11 @@ nav li a {
     border-bottom: 10px solid #0080FF;
 }
 
+.crowns {
+    -moz-user-select: none;
+    user-select: none;
+}
+
 .p1 img,
 .p2 img {
     margin: 0px auto;
