@@ -30,8 +30,8 @@ nav ul {
 }
 
 nav ul li {
-    text-align: center;
     width: 20%;
+    text-align: center;
 }
 
 nav li a {
@@ -82,7 +82,7 @@ nav li a {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #FFFFFF; 
+    background-color: #FFFFFF;
     border-bottom: 10px solid #0080FF;
 }
 
@@ -97,7 +97,7 @@ nav li a {
 }
 
 .p1 h1 {
-    color: #000000; 
+    color: #000000;
 }
 
 .p2 {
@@ -111,7 +111,7 @@ nav li a {
 }
 
 .p2 h1 {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 .digits {
@@ -155,6 +155,7 @@ div h1 {
 }
 
 .btn {
+    width: 100px;
     padding: 15px;
     color: #000000;
     font-size: 16px;
@@ -166,7 +167,6 @@ div h1 {
     background-color: #EEEEEE;
     transition-property: background-color;
     transition-duration: 1s;
-    width: 100px;
 }
 
 .btn:hover {
@@ -206,7 +206,7 @@ h1 {
     justify-content: space-around;
 }
 
-.q-left-col, 
+.q-left-col,
 .q-right-col {
     width: 48%;
     margin: auto 0;
@@ -303,6 +303,7 @@ h1 {
 /* about page */
 .contact img {
   width: 100%;
+  height: auto;
 }
 
 .contact {
@@ -435,7 +436,7 @@ my-email::before {
     }
 }
 
-.q-left-col, 
+.q-left-col,
 .q-right-col {
     width: 75%;
     margin: auto 0;
@@ -452,7 +453,7 @@ my-email::before {
     .content {
         width: 100%;
     }
-    .q-left-col, 
+    .q-left-col,
     .q-right-col {
         width: 100%;
         margin: 0 auto;
