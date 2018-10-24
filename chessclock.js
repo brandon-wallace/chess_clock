@@ -12,7 +12,7 @@ let startbtn = document.getElementById('start-btn');
 let resetbtn = document.getElementById('reset-btn');
 let pausebtn = document.getElementById('pause-btn');
 let swapbtn = document.getElementById('swap-btn');
-let beep = new Audio('audio/start.mp3');
+let beep = new Audio('../audio/start.mp3');
 
 
 function padZero(number) {
@@ -132,7 +132,7 @@ let p2time = new Clock('p2-min', document.getElementById('p2-min').innerHTML);
 function start() {
     playing = true;
     beep.play();
-    let timeout = new Audio('audio/timeout.mp3');
+    let timeout = new Audio('../audio/timeout.mp3');
     let timer = setInterval(function() {
         if (currentPlayer === 0) {
 
