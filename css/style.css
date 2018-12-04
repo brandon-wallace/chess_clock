@@ -13,19 +13,19 @@ body {
 
 /* menu bar page navigation */
 nav {
-    padding: 15px;
-    position: fixed;
     top: 0px;
     left: 0px;
     right: 0px;
+    padding: 15px;
+    position: fixed;
     background-color: hsla(000, 000%, 000%, 0.5);
 }
 
 nav ul {
     width: 50%;
     margin: auto;
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: space-between;
 }
 
@@ -78,10 +78,10 @@ nav li a {
 }
 
 .p1 {
+    display: flex;
     padding: 1% 4%;
     font-size: 2em;
     text-align: center;
-    display: flex;
     flex-direction: column;
     background-color: #FFFFFF;
     border-bottom: 10px solid #0080FF;
