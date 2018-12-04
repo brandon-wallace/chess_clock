@@ -318,6 +318,18 @@ h1 {
     color: #2E2E2E;
 }
 
+.icons {
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.icons i {
+    color: #000000;
+    font-size: 3rem;
+}
+
 my-email::after {
   content: attr(data-domain);
 }
