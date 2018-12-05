@@ -1,42 +1,47 @@
 <!doctype html>
-<html lang="en"> 
+<html lang="en">
     <head>
       <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">  
-      <meta name="description" content="Chess Timer">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Online chess timer clock">
+      <meta name="author" content="brandon wallace">
       <link rel="icon" type="image/svg" href="images/favicon.svg">
-      <link rel="stylesheet" type="text/css" href="style.css">
+      <!-- <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="css/main.css">
       <title>Chess Clock</title>
     </head>
     <body>
 
-      <!-- menu bar navigation -->
-      <nav>
-        <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="quotes.html">quotes</a></li>
-          <li><a href="links.html">links</a></li>
-          <li><a href="about.html">about</a></li>
-          <li><a href="error.html">404</a></li>
-        </ul>
-      </nav><!-- END menu bar navigation -->
+      <header>
+
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="quotes.html">quotes</a></li>
+            <li><a href="links.html">links</a></li>
+            <li><a href="about.html">about</a></li>
+            <!-- <li><a href="error.html">404</a></li> -->
+          </ul>
+
+      </header><!-- END header -->
 
       <!-- wrapper -->
-      <div class="container">
+      <article>
 
         <h1 class="banner">CHESS CLOCK</h1>
 
         <div class="players">
 
         <!-- player 1 -->
-        <div class="p1">
-          <img class="crowns" src="images/wK.svg" alt="light_color_queen" width="150" height="150">
-          <h1>PLAYER 1</h1>
+        <div class="player one">
+
+          <img class="crowns" src="images/wK.svg" alt="light_color_queen">
+          <h1 class="label">PLAYER 1</h1>
+
           <div class="digits">
             <h1 id="timeout1"><span id="p1-min">10</span>:<span id="p1-sec">00</span></h1>
           </div>
 
-          <div class="tm-ctl">
+          <div class="time-ctrl">
             <div id="plus1" onclick="increaseP1()" title="Increase Time"></div>
             <div id="minus1" onclick="decreaseP1()" title="Decrease Time"></div>
           </div>
@@ -44,17 +49,20 @@
         </div><!-- END player 1 -->
 
         <!-- player 2 -->
-        <div class="p2">
-          <img class="crowns" src="images/bK.svg" alt="dark_color_queen" width="150" height="150">
-          <h1>PLAYER 2</h1>
+        <div class="player two">
+
+          <img class="crowns" src="images/bK.svg" alt="dark_color_queen">
+          <h1 class="label">PLAYER 2</h1>
+
           <div class="digits">
             <h1 id="timeout2"><span id="p2-min">10</span>:<span id="p2-sec">00</span></h1>
           </div>
 
-          <div class="tm-ctl">
+          <div class="time-ctrl">
             <div id="plus1" onclick="increaseP2()" title="Increase Time"></div>
             <div id="minus1" onclick="decreaseP2()" title="Decrease Time"></div>
           </div>
+
         </div><!-- END player 2 -->
 
         </div><!-- END players -->
@@ -68,7 +76,8 @@
         <p id="signature">created by: brandon_wallace</p>
       </div><!-- END wrapper -->
 
-    <script type="text/javascript" src="chessclock.js"></script> 
+    </article>
+
+    <script type="text/javascript" src="chessclock.js"></script>
     </body>
 </html>
-
