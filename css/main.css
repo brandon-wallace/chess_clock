@@ -42,15 +42,22 @@ article {
 }
 
 .players {
-  /* height: 100%; */
-}
-
-.player {
-  height: 25%;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  border: 4px solid #FF0000;
+}
+
+.player {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  max-width: 400px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: 4px solid #0000FF;
 }
 
 .crowns {
@@ -60,11 +67,15 @@ article {
 
 .label {
   margin: 0;
-  font-size: 3rem;
+  font-size: 3.7rem;
+}
+
+.timeout {
+  margin: 0;
 }
 
 .digits {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .banner,
@@ -76,6 +87,20 @@ article {
 
 }
 
+.signature {
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  position: fixed;
+  margin-right: 10px;
+}
+
 @media only screen and (min-width: 600px) {
 
+}
+
+@media only screen and (min-width: 850px) {
+  .players {
+    flex-direction: row;
+  }
 }
