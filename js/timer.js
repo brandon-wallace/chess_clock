@@ -1,4 +1,6 @@
+
+
 const setTime = () => {
-  let startTime = prompt("Set players time:");
-  console.log(startTime);
+  let starttime = prompt("Time:");
+  console.log(starttime);
 }
