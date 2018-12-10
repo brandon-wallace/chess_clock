@@ -1,87 +1,92 @@
 <!doctype html>
 <html lang="en">
-  <head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Online chess timer clock">
-    <meta name="author" content="brandon wallace">
-    <link rel="icon" type="image/svg" href="images/favicon.svg">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <link rel="stylesheet" href="css/main.css">
-    <title>Chess Clock</title>
+<head>
 
-  </head>
-  <body>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Online chess timer clock">
+  <meta name="author" content="brandon wallace">
+  <link rel="icon" type="image/svg" href="images/favicon.svg">
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="css/main.css">
+  <title>Chess Clock</title>
 
+</head>
+
+<body>
+
+  <article>
     <header>
 
-        <ul>
+      <nav>
+        <ul class="menu">
           <li><a href="index.html">home</a></li>
           <li><a href="quotes.html">quotes</a></li>
           <li><a href="links.html">links</a></li>
           <li><a href="about.html">about</a></li>
-          <!-- <li><a href="error.html">404</a></li> -->
         </ul>
+      </nav>
 
     </header><!-- END header -->
 
-    <article>
 
-      <h1 class="banner">CHESS CLOCK</h1>
 
-      <div class="players">
+    <div class="players">
 
-      <div class="player one"><!-- player 1 -->
+      <div class="player one">
+        <!-- player 1 -->
 
         <img class="crowns" src="images/wK.svg" alt="light_color_queen">
         <h1 class="label">PLAYER 1</h1>
 
         <div class="digits">
-          <h1 class="timeout"><span class="min">10</span>:<span class="sec">00</span></h1>
+          <h1 class="numbers"><span class="min">10</span>:<span class="sec">00</span></h1>
         </div>
 
-        <div class="time-ctrl">
+        <!-- <div class="time-ctrl">
           <div id="plus1" onclick="increaseP1()" title="Increase Time"></div>
           <div id="minus1" onclick="decreaseP1()" title="Decrease Time"></div>
-        </div>
+        </div> -->
 
       </div><!-- END player 1 -->
 
 
-      <div class="player two"><!-- player 2 -->
+      <div class="player two">
+        <!-- player 2 -->
 
         <img class="crowns" src="images/bK.svg" alt="dark_color_queen">
         <h1 class="label">PLAYER 2</h1>
 
         <div class="digits">
-          <h1  class="timeout"><span class="min">10</span>:<span id="sec">00</span></h1>
+          <h1 class="numbers"><span class="min">10</span>:<span id="sec">00</span></h1>
         </div>
 
-        <div class="time-ctrl">
+        <!-- <div class="time-ctrl">
           <div id="plus1" onclick="increaseP2()" title="Increase Time"></div>
           <div id="minus1" onclick="decreaseP2()" title="Decrease Time"></div>
-        </div>
+        </div> -->
 
       </div><!-- END player 2 -->
 
-      </div><!-- END players -->
+    </div><!-- END players -->
 
-      <div class="game-controls">
-        <button class="btn" onclick="start()" id="start-btn">START</button>
-        <button class="btn" onclick="reset()" id="reset-btn">RESET</button>
-        <button class="btn" onclick="pause()" id="pause-btn">PAUSE</button>
-        <button class="btn tggl" onclick="swap()" id="swap-btn">SWAP</button>
-        <button class="btn" onclick="setTime()">SET TIME</button>
-      </div>
+    <div class="time-controls">
+      <button class="btn" onclick="start()" id="start-btn">START</button>
+      <!-- <button class="btn" onclick="reset()" id="reset-btn">RESET</button> -->
+      <!-- <button class="btn" onclick="pause()" id="pause-btn">PAUSE</button> -->
+      <button class="btn tggl" onclick="swap()" id="swap-btn">SWAP</button>
+      <button id="set-time" class="btn" onclick="setTime()">SET TIME</button>
+    </div>
 
-      <p class="signature">created by: brandon_wallace</p>
+    <p class="signature">created by: brandon_wallace</p>
 
     </div>
 
   </article><!-- END article -->
 
-  <script src="timer.js"></script>
-  <script type="text/javascript" src="chessclock.js"></script>
-  </body>
+  <script src="js/timer.js"></script>
+  <!-- <script type="text/javascript" src="chessclock.js"></script> -->
+</body>
+
 </html>
