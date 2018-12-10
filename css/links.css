@@ -1,0 +1,120 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #999999;
+}
+
+body {
+  background-repeat: repeat;
+  background-position: center center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url('../images/chessboardbg.jpg');
+}
+
+header {
+  height: 5%;
+  width: 100%;
+  background-color: hsla(000, 000%, 000%, 0.5);
+}
+
+article {
+  width: 100%;
+  height: 95%;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+/* Links */
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.links-column ul {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.links-column li a {
+  color: #0080FF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.links-column li a:hover {
+  color: #44a4f2;
+}
+
+.links-column {
+  padding: 20px 0 20px 40px;
+  background-color: #d9d9d9;
+  width: 100%;
+  max-width: 310px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 925px;
+}
+
+.image-column {
+  padding: 20px;
+  width: 100%;
+  max-width: 310px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  min-height: 925px;/*! box-sizing: border-box; */
+}
+
+.image-column img {
+  width: 100%;
+  height: auto;
+  max-width: 270px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media only screen and (min-width: 600px) {
+  .links {
+    flex-direction: row;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .links-column,
+  .image-column {
+    margin-top: 2%;
+  }
+}
