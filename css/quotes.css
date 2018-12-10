@@ -1,0 +1,121 @@
+html,
+body {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-repeat: repeat;
+  background-color: #999999;
+  background-position: center center;
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url('../images/chessboardbg.jpg');
+}
+
+header {
+  height: 5%;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: hsla(000, 000%, 000%, 0.5);
+}
+
+article {
+  width: 100%;
+  height: 95%;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.menu {
+  margin: 0;
+  display: flex;
+  padding-left: 0;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style-type: none;
+}
+
+.menu li a {
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* QUOTES */
+
+.quotes {
+  width: 100%;
+  margin: 0 auto;
+  /*! padding: 50px 0; */
+  max-width: 1100px;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+}
+
+.quote-text {
+  font-weight: bold;
+  font-size: 1rem;
+  text-indent: -0.5em;
+}
+
+.quote-card {
+  width: 100%;
+  height: 200px;
+  padding: 4%;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  font-weight: bold;
+  background-color: #d9d9d9;
+  border-bottom: 8px solid #0080FF;
+}
+
+.names {
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  position: absolute;
+  align-self: flex-end;
+  padding: 15px;
+  background-color: #0080FF;
+  color: #FFFFFF;
+}
+
+.names > p {
+  margin: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .quotes {
+    margin: 2% auto 2% auto;
+  }
+
+  .quote-card {
+    width: 50%;
+  }
+
+  .left {
+    justify-content: flex-end;
+  }
+
+  .right {
+    justify-content: flex-start;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .quote-text {
+    font-size: 1.2rem;
+  }
+}
+
+/* END QUOTES */

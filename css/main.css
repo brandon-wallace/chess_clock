@@ -6,39 +6,44 @@ body {
   background-color: #999999;
 }
 
-header,
-article,
-.player {
-  border: solid;
-}
-
-article {
-  font-family: monospace, monospace;
+body {
+  background-repeat: repeat;
+  background-position: center center;
+  background-image: url('../images/chessboardbg.jpg');
 }
 
 header {
   height: 5%;
-  font-family: Helvetica, sans-serif;
+  width: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: hsla(000, 000%, 000%, 0.5);
 }
 
-ul {
+article {
+  width: 100%;
+  height: 95%;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.menu {
   margin: 0;
   display: flex;
   padding-left: 0;
   justify-content: space-around;
 }
 
-li {
+.menu li {
   list-style-type: none;
 }
 
-a {
-  color: #000000;
+.menu li a {
+  color: #FFFFFF;
+  font-weight: bold;
   text-decoration: none;
-}
-
-article {
-  height: 95%;
 }
 
 .players {
@@ -46,7 +51,6 @@ article {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border: 4px solid #FF0000;
 }
 
 .player {
@@ -57,20 +61,32 @@ article {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  border: 4px solid #0000FF;
+  border-bottom: 8px solid #0080FF;
+  font-family: monospace, monospace;
+}
+
+.one {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.two {
+  color: #FFFFFF;
+  background-color: #000000;
 }
 
 .crowns {
   width: 150px;
   height: 150px;
+  display: none;
 }
 
 .label {
   margin: 0;
-  font-size: 3.7rem;
+  font-size: 4rem;
 }
 
-.timeout {
+.numbers {
   margin: 0;
 }
 
@@ -78,13 +94,11 @@ article {
   font-size: 4rem;
 }
 
-.banner,
-.crowns {
-  display: none;
-}
-
-.time-ctrl {
-
+.time-controls {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 .signature {
@@ -92,15 +106,29 @@ article {
   bottom: 0;
   margin: 0;
   position: fixed;
+  font-size: .75rem;
   margin-right: 10px;
 }
 
-@media only screen and (min-width: 600px) {
-
+@media only screen and (min-width: 425px) {
+  .digits {
+    font-size: 4.5rem;
+  }
 }
 
 @media only screen and (min-width: 850px) {
   .players {
     flex-direction: row;
+    border: solid;
+  }
+
+  .player {
+    border: 4px solid #fee120;
+    min-height: 450px;
+    margin-top: 2%;
+  }
+
+  .crowns {
+    display: block;
   }
 }
