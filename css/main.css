@@ -17,6 +17,7 @@ header {
   width: 100%;
   font-family: Helvetica, Arial, sans-serif;
   background-color: hsla(000, 000%, 000%, 0.5);
+  min-height: 50px;
 }
 
 article {
@@ -27,6 +28,7 @@ article {
 nav {
   margin: 0 auto;
   max-width: 800px;
+  min-height: 50px;
 }
 
 .menu {
@@ -38,12 +40,83 @@ nav {
 
 .menu li {
   list-style-type: none;
+  padding: 10px;
 }
 
 .menu li a {
   color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
+}
+
+.modal {
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: linear-gradient(#333333, transparent);
+}
+
+.content {
+  /*! width: 40; */
+  height: 45%;
+  /*! max-width: 450px; */
+  min-width: 300px;
+  min-height: 500px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #EEEEEE;
+  border: 4px solid #222222;
+  display: flex;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 20px;
+  /*! box-sizing: border-box; */
+}
+
+.content h1 {
+  margin: 0;
+  font-size: 4rem;
+}
+
+.close {
+  align-self: flex-end;
+  /*! text-align: right; */
+  font-size: 3rem;
+  margin: 0;
+  line-height: .5;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 225px;
+}
+
+.plus,
+.minus {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.label {
+  font-size: 2rem;
+}
+
+.btn {
+
 }
 
 .players {
@@ -119,11 +192,11 @@ nav {
 @media only screen and (min-width: 850px) {
   .players {
     flex-direction: row;
-    border: solid;
+    /*! border: solid; */
   }
 
   .player {
-    border: 4px solid #fee120;
+    /*! border: 4px solid #fee120; */
     min-height: 450px;
     margin-top: 2%;
   }

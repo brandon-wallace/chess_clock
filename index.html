@@ -30,7 +30,32 @@
 
     </header><!-- END header -->
 
+    <div class="modal">
 
+    <div class="content">
+      <h3 class="close" onclick="closeModal()">&times;</h3>
+
+      <h1 class="label">Player 1</h1>
+
+      <div class="controls">
+        <h1><span class="plus" onclick="increaseTime()">&#43;</span></h1>
+        <h1 id="minutes1">10</h1>
+        <h1><span class="minus" onclick="decreaseTime()">&#8722;</span></h1>
+      </div>
+
+      <h1 class="label">Player 2</h1>
+
+      <div class="controls">
+        <h1><span class="plus" onclick="increaseTime()">&#43;</span>
+        <h1 id="minutes2">10</h1>
+        <h1><span class="minus" onclick="decreaseTime()">&#8722;</span></h1>
+      </div>
+      <div class="box">
+        <button class="btn" onclick="closeModal()">SUBMIT</button>
+      </div>
+
+    </div>
+  </div>
 
     <div class="players">
 
@@ -77,6 +102,7 @@
       <!-- <button class="btn" onclick="pause()" id="pause-btn">PAUSE</button> -->
       <button class="btn tggl" onclick="swap()" id="swap-btn">SWAP</button>
       <button id="set-time" class="btn" onclick="setTime()">SET TIME</button>
+      <button class="btn" onclick="openModal()">SET TIME</button>
     </div>
 
     <p class="signature">created by: brandon_wallace</p>
