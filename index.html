@@ -35,7 +35,7 @@
     <div class="content">
       <h3 class="close" onclick="closeModal()">&times;</h3>
 
-      <h1 class="label">Player 1</h1>
+      <h1 class="label">PLAYER1</h1>
 
       <div class="controls">
         <h1><span class="plus" onclick="increaseTime()">&#43;</span></h1>
@@ -43,13 +43,14 @@
         <h1><span class="minus" onclick="decreaseTime()">&#8722;</span></h1>
       </div>
 
-      <h1 class="label">Player 2</h1>
+      <h1 class="label">PLAYER2</h1>
 
       <div class="controls">
         <h1><span class="plus" onclick="increaseTime()">&#43;</span>
         <h1 id="minutes2">10</h1>
         <h1><span class="minus" onclick="decreaseTime()">&#8722;</span></h1>
       </div>
+
       <div class="box">
         <button class="btn" onclick="closeModal()">SUBMIT</button>
       </div>
@@ -59,8 +60,7 @@
 
     <div class="players">
 
-      <div class="player one">
-        <!-- player 1 -->
+      <div class="player one"><!-- player 1 -->
 
         <img class="crowns" src="images/wK.svg" alt="light_color_queen">
         <h1 class="label">PLAYER 1</h1>
@@ -69,16 +69,10 @@
           <h1 class="numbers"><span class="min">10</span>:<span class="sec">00</span></h1>
         </div>
 
-        <!-- <div class="time-ctrl">
-          <div id="plus1" onclick="increaseP1()" title="Increase Time"></div>
-          <div id="minus1" onclick="decreaseP1()" title="Decrease Time"></div>
-        </div> -->
-
       </div><!-- END player 1 -->
 
 
-      <div class="player two">
-        <!-- player 2 -->
+      <div class="player two"><!-- player 2 -->
 
         <img class="crowns" src="images/bK.svg" alt="dark_color_queen">
         <h1 class="label">PLAYER 2</h1>
@@ -87,22 +81,13 @@
           <h1 class="numbers"><span class="min">10</span>:<span id="sec">00</span></h1>
         </div>
 
-        <!-- <div class="time-ctrl">
-          <div id="plus1" onclick="increaseP2()" title="Increase Time"></div>
-          <div id="minus1" onclick="decreaseP2()" title="Decrease Time"></div>
-        </div> -->
-
       </div><!-- END player 2 -->
 
     </div><!-- END players -->
 
     <div class="time-controls">
-      <button class="btn" onclick="start()" id="start-btn">START</button>
-      <!-- <button class="btn" onclick="reset()" id="reset-btn">RESET</button> -->
-      <!-- <button class="btn" onclick="pause()" id="pause-btn">PAUSE</button> -->
-      <button class="btn tggl" onclick="swap()" id="swap-btn">SWAP</button>
-      <button id="set-time" class="btn" onclick="setTime()">SET TIME</button>
-      <button class="btn" onclick="openModal()">SET TIME</button>
+      <button class="btn" onclick="start();" id="start-btn">START</button>
+      <button class="btn" onclick="openModal();">SET TIME</button>
     </div>
 
     <p class="signature">created by: brandon_wallace</p>
@@ -112,7 +97,6 @@
   </article><!-- END article -->
 
   <script src="js/timer.js"></script>
-  <!-- <script type="text/javascript" src="chessclock.js"></script> -->
 </body>
 
 </html>
