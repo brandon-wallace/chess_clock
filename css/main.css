@@ -3,10 +3,10 @@ body {
   margin: 0;
   width: 100%;
   height: 100%;
-  background-color: #999999;
 }
 
 body {
+  background-color: #999999;
   background-repeat: repeat;
   background-position: center center;
   background-image: url('../images/chessboardbg.jpg');
@@ -15,9 +15,9 @@ body {
 header {
   height: 5%;
   width: 100%;
+  min-height: 50px;
   font-family: Helvetica, Arial, sans-serif;
   background-color: hsla(000, 000%, 000%, 0.5);
-  min-height: 50px;
 }
 
 article {
@@ -29,6 +29,7 @@ nav {
   margin: 0 auto;
   max-width: 800px;
   min-height: 50px;
+  height: 100%;
 }
 
 .menu {
@@ -36,11 +37,13 @@ nav {
   display: flex;
   padding-left: 0;
   justify-content: space-around;
+  height: 100%;
+  align-items: center;
 }
 
 .menu li {
+  /*! padding: 10px; */
   list-style-type: none;
-  padding: 10px;
 }
 
 .menu li a {
@@ -102,9 +105,9 @@ nav {
 
 .plus,
 .minus {
-  -webkit-user-select: none;
-  -moz-user-select: none;
   user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .label {

@@ -28,6 +28,7 @@ article {
 nav {
   margin: 0 auto;
   max-width: 800px;
+  height: 100%;
 }
 
 .menu {
@@ -35,6 +36,8 @@ nav {
   display: flex;
   padding-left: 0;
   justify-content: space-around;
+  align-items: center;
+  height: 100%;
 }
 
 .menu li {
