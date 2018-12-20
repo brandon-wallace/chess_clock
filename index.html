@@ -17,6 +17,7 @@
 <body>
 
   <article>
+
     <header>
 
       <nav>
@@ -32,53 +33,56 @@
 
     <div class="modal">
 
-    <div class="content">
-      <h3 class="close" onclick="closeModal()">&times;</h3>
+      <div class="content">
+        <h3 class="close" onclick="closeModal()">&times;</h3>
 
-      <h1 class="label">PLAYER1</h1>
+        <!-- player 1 modal window controls -->
+        <h1 class="label">PLAYER1</h1>
 
-      <div class="controls">
-        <h1><span class="plus" onclick="increaseTime()">&#43;</span></h1>
-        <h1 id="minutes1">10</h1>
-        <h1><span class="minus" onclick="decreaseTime()">&#8722;</span></h1>
+        <div class="controls">
+          <h1><span class="plus" onclick="increaseTimeP1()">&#43;</span></h1>
+          <h1 id="minutes1">10</h1>
+          <h1><span class="minus" onclick="decreaseTimeP1()">&#8722;</span></h1>
+        </div>
+
+        <!-- player 2 modal window controls -->
+        <h1 class="label">PLAYER2</h1>
+
+        <div class="controls">
+          <h1><span class="plus" onclick="increaseTimeP2()">&#43;</span>
+            <h1 id="minutes2">10</h1>
+            <h1><span class="minus" onclick="decreaseTimeP2()">&#8722;</span></h1>
+        </div>
+
+        <div class="box">
+          <button class="btn" onclick="closeModal()">SUBMIT</button>
+        </div>
+
       </div>
-
-      <h1 class="label">PLAYER2</h1>
-
-      <div class="controls">
-        <h1><span class="plus" onclick="increaseTime()">&#43;</span>
-        <h1 id="minutes2">10</h1>
-        <h1><span class="minus" onclick="decreaseTime()">&#8722;</span></h1>
-      </div>
-
-      <div class="box">
-        <button class="btn" onclick="closeModal()">SUBMIT</button>
-      </div>
-
     </div>
-  </div>
 
     <div class="players">
 
-      <div class="player one"><!-- player 1 -->
+      <!-- player 1 -->
+      <div class="player one">
 
         <img class="crowns" src="images/wK.svg" alt="light_color_queen">
         <h1 class="label">PLAYER 1</h1>
 
         <div class="digits">
-          <h1 class="numbers"><span class="min">10</span>:<span class="sec">00</span></h1>
+          <h1 class="numbers"><span class="min1">10</span>:<span id="sec1">00</span></h1>
         </div>
 
       </div><!-- END player 1 -->
 
-
-      <div class="player two"><!-- player 2 -->
+      <!-- player 2 -->
+      <div class="player two">
 
         <img class="crowns" src="images/bK.svg" alt="dark_color_queen">
         <h1 class="label">PLAYER 2</h1>
 
         <div class="digits">
-          <h1 class="numbers"><span class="min">10</span>:<span id="sec">00</span></h1>
+          <h1 class="numbers"><span class="min2">10</span>:<span id="sec2">00</span></h1>
         </div>
 
       </div><!-- END player 2 -->
@@ -86,7 +90,7 @@
     </div><!-- END players -->
 
     <div class="time-controls">
-      <button class="btn" onclick="start();" id="start-btn">START</button>
+      <button class="btn" onclick="start();">START</button>
       <button class="btn" onclick="openModal();">SET TIME</button>
     </div>
 
