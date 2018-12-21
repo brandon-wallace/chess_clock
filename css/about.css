@@ -55,7 +55,7 @@ nav {
   max-width: 940px;
   text-align: center;
   background-color: #d9d9d9;
-  padding-bottom: 2%;
+  padding-bottom: 30px;
 }
 
 .about-information img {
@@ -120,7 +120,7 @@ my-email::before {
   }
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .about-information {
     padding: 20px 10px 30px 10px;
   }
