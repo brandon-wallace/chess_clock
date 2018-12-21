@@ -3,6 +3,8 @@
 
 let min1 = Number(document.getElementById("minutes1").innerHTML);
 let min2 = Number(document.getElementById("minutes2").innerHTML);
+let beep = new Audio('audio/start.mp3');
+let playing = true;
 
 
 const padZero = (n) => {
@@ -59,4 +61,33 @@ const closeModal = () => {
   document.querySelector(".min1").innerHTML = padZero(min1);
   document.querySelector(".min2").innerHTML = padZero(min2);
   document.querySelector(".modal").style.display = "none";
+}
+
+
+let swap = () => {
+  currentPlayer = currentPlayer === 0 ? 1 : 0;
+}
+
+
+const reset = () => {
+
+}
+
+
+const start = () => {
+  playing = true;
+  beep.play();
+  let timeout = new Audio('audio/timeout.mp3');
+  let timer = setInterval(function() {
+    if (currentPlayer === 0) {
+      if (playing === true) {
+
+      }
+    }
+  }
+} else {
+  if (currentPlayer === 1) {
+    console.log("PLAYER 2");
+    document.getElementById("swap").addEventListener("click", swap);
+  }
 }
