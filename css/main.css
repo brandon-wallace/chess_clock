@@ -104,9 +104,9 @@ nav {
 
 .plus,
 .minus {
-  user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
+  user-select: none;
 }
 
 .label {
@@ -121,8 +121,8 @@ nav {
 }
 
 .btn:hover {
-  color: #111000;
-  background-color: #999999;
+  color: #cecece;
+  background-color: #7f7f7f;
 }
 
 .players {
@@ -182,15 +182,7 @@ nav {
 
 }
 
-.signature {
-  right: 0;
-  bottom: 0;
-  margin: 0;
-  position: fixed;
-  font-size: .75rem;
-  margin-right: 10px;
-}
-
+/* index.html media queries */
 @media only screen and (min-width: 425px) {
   .digits {
     font-size: 4.5rem;
