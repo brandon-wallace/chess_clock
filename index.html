@@ -34,34 +34,34 @@
     <div class="modal">
 
       <div class="content">
-        <h3 class="close" onclick="closeModal()">&times;</h3>
+        <h3 class="close" onclick="closeModal();">&times;</h3>
 
         <!-- player 1 modal window controls -->
         <h1 class="label">PLAYER1</h1>
 
         <div class="controls">
-          <h1><span class="plus" onclick="increaseTimeP1()">&#43;</span></h1>
+          <h1><span class="plus" onclick="increaseTimeP1();">&#43;</span></h1>
           <h1 id="minutes1">10</h1>
-          <h1><span class="minus" onclick="decreaseTimeP1()">&#8722;</span></h1>
+          <h1><span class="minus" onclick="decreaseTimeP1();">&#8722;</span></h1>
         </div>
 
         <!-- player 2 modal window controls -->
         <h1 class="label">PLAYER2</h1>
 
         <div class="controls">
-          <h1><span class="plus" onclick="increaseTimeP2()">&#43;</span>
+          <h1><span class="plus" onclick="increaseTimeP2();">&#43;</span>
             <h1 id="minutes2">10</h1>
-            <h1><span class="minus" onclick="decreaseTimeP2()">&#8722;</span></h1>
+            <h1><span class="minus" onclick="decreaseTimeP2();">&#8722;</span></h1>
         </div>
 
         <div class="box">
-          <button class="btn" onclick="closeModal()">SUBMIT</button>
+          <button class="btn" onclick="closeModal();">SUBMIT</button>
         </div>
 
       </div>
     </div>
 
-    <div id="swap" class="players">
+    <div class="players">
 
       <!-- player 1 -->
       <div class="player one">
@@ -90,11 +90,10 @@
     </div><!-- END players -->
 
     <div class="time-controls">
-      <button id="startPauseBtn" class="btn" onclick="start();">START</button>
-      <button class="btn" onclick="openModal();">SET TIME</button>
+      <button class="start-btn btn" onclick="start();">START</button>
+      <button class="pause-btn btn" onclick="pauseResumeReset();">PAUSE</button>
+      <button class="set-time-btn btn" onclick="openModal();">SET TIME</button>
     </div>
-
-    <p class="signature">created by: brandon_wallace</p>
 
     </div>
 
