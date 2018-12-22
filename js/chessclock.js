@@ -91,6 +91,7 @@ function reset() {
 
 // Toggle from player to player.
 function swap() {
+    if (!playing) return;
     currentPlayer = currentPlayer === 0 ? 1 : 0;
 }
 
