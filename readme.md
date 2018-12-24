@@ -1,4 +1,4 @@
-# A mobile first, responsive online chess clock
+# A mobile first, responsive online chess clock - New and Improved!
 
 
 ## Created using Javascript ES6, HTML5, and CSS3. ##
@@ -13,6 +13,7 @@ Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_cl
  * HTML5
  * CSS3
  * Sound Effects
+ 
 
 
 ![chess clock screenshot 1](images/screenshot1.jpg)

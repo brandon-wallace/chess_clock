@@ -1,4 +1,4 @@
-A mobile first, responsive online chess clock
+A mobile first, responsive online chess clock - New and Improved!
 
 
 Created using Javascript ES6, HTML5, and CSS3.
