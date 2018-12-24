@@ -91,7 +91,7 @@ nav {
   background-image: linear-gradient(#111111, transparent);
 }
 
-.content {
+.modal-content {
   height: 45%;
   padding: 20px;
   display: flex;
@@ -103,18 +103,28 @@ nav {
   border: 4px solid #222222;
   justify-content: space-around;
   font-family: monospace, monospace;
+  position: relative;
 }
 
-.content h1 {
+.modal-content h1 {
   margin: 0;
   font-size: 4rem;
 }
 
-.close {
+.modal-close {
   margin: 0;
   font-size: 3rem;
   line-height: .5;
   align-self: flex-end;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modal-card {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
 }
 
 .box {
@@ -122,10 +132,11 @@ nav {
   justify-content: center;
 }
 
-.controls {
-  width: 225px;
+.modal-controls {
+  width: 250px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .plus,
@@ -135,7 +146,7 @@ nav {
   user-select: none;
 }
 
-.label {
+.modal-label {
   font-size: 2rem;
 }
 
