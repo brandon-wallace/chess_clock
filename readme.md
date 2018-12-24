@@ -4,7 +4,7 @@
 ## Created using Javascript ES6, HTML5, and CSS3. ##
 
 
-Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_clock/)
+## Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_clock/)
 
 ## Features:
  * Mobile First
