@@ -1,7 +1,7 @@
 An online chess clock
 
 
-An online chess clock using Javascript, HTML, and CSS.
+An online chess clock using Javascript ES6, HTML5, and CSS3.
 
 
 Website: https://iambw.github.io/chess_clock/
