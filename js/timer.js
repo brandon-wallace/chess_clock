@@ -93,8 +93,10 @@ const pauseResumeReset = (resetFlag) => {
     playing = !playing; // Swap true and false or false to true.
     if (playing) {
       pausebtn.innerHTML = "PAUSE";
+      pausebtn.blur();
     } else {
       pausebtn.innerHTML = "RESUME";
+      pausebtn.blur();
     }
   } else {
     document.querySelectorAll(".numbers")[0].style.color = "#000000";
