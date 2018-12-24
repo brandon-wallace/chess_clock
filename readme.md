@@ -7,25 +7,15 @@
 Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_clock/)
 
 ## Features:
- * Mobile First Design
- * Responsive
+ * Mobile First
+ * Responsive Design
  * Javascript ES6
  * HTML5
  * CSS3
  * Sound Effects
 
- # &#9812; &#9818;
- # &#9813;
- # &#9814;
- # &#9815;
- # &#9816;
- # &#9817;
- # &#9818;
- # &#9819;
- # &#9820;
- # &#9821;
- # &#9822;
- # &#9823;
+ # &#9815; &#9812; &#9823; &#9822; &#9816; &#9818; &#9821; &#9813; &#9819; &#9820; &#9817; &#9814;
+
 
 ![chess clock screenshot 1](images/screenshot1.jpg)
 
