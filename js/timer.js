@@ -1,4 +1,3 @@
-// Chess Clock
 "use strict";
 
 
@@ -6,13 +5,13 @@ let p1sec = 60;
 let p2sec = 60;
 let playing = true;
 let currentPlayer = 0;
-let min1 = Number(document.getElementById("minutes1").innerHTML);
-let min2 = Number(document.getElementById("minutes2").innerHTML);
+const beep = new Audio('audio/start.mp3');
 const panel = document.querySelector(".players");
 const startbtn = document.querySelector(".start-btn");
 const pausebtn = document.querySelector(".pause-btn");
 const setTimebtn = document.querySelector(".set-time-btn");
-const beep = new Audio('audio/start.mp3');
+let min1 = Number(document.getElementById("minutes1").innerHTML);
+let min2 = Number(document.getElementById("minutes2").innerHTML);
 
 
 // Add a leading zero if number is less than 10.
