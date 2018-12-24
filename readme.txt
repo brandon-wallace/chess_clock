@@ -1,7 +1,7 @@
-An online chess clock
+A mobile first, responsive online chess clock
 
 
-An mobile first, responsive online chess clock created using Javascript ES6, HTML5, and CSS3.
+Created using Javascript ES6, HTML5, and CSS3.
 
 
 Website: https://iambw.github.io/chess_clock/
