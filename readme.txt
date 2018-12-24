@@ -1,19 +1,19 @@
-An online chess clock
+A mobile first, responsive online chess clock
 
 
-An online chess clock using Javascript, HTML, and CSS.
+Created using Javascript ES6, HTML5, and CSS3.
 
 
 Website: https://iambw.github.io/chess_clock/
 
 Features:
- * CSS sprites
- * Media queries
- * Audio
- * Transitional hover effects
- * A custom font
- * Numbers change to red on timeout
+ * Mobile First Design
+ * Responsive
+ * Javascript ES6
+ * HTML5
+ * CSS3
+ * Sound Effects
 
-License: 
+License:
 
 This project is licensed under the GPL-3.0 License.
