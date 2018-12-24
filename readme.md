@@ -13,7 +13,7 @@ Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_cl
  * HTML5
  * CSS3
  * Sound Effects
- 
+
 
 
 ![chess clock screenshot 1](images/screenshot1.jpg)
@@ -22,7 +22,18 @@ Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_cl
 
 ![chess clock screenshot 3](images/screenshot3.jpg)
 
-
+&#9812;
+  &#9813;
+  &#9814;
+  &#9815;
+  &#9816;
+  &#9817;
+  &#9818;
+  &#9819;
+  &#9820;
+  &#9821;
+  &#9822;
+  &#9823;
 ## License: ##
 
 This project is licensed under the GPL-3.0 License.
