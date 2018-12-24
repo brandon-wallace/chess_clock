@@ -545,9 +545,9 @@ my-email::before {
   .error-sub-text { font-size: 4rem; }
 }
 @media only screen and (min-width: 650px) {
-  .error-text { font-size: 7rem; }
+  .error-text { font-size: 7rem; /*! color: #fff; */text-shadow: 2px 3px 3px #FFF, 3px 4px 4px #FFF;}
 
-  .error-sub-text { font-size: 5rem; }
+  .error-sub-text { font-size: 5rem; /*! color: #FFFFFF; */text-shadow: 2px 3px 3px #FFF, 3px 4px 4px #FFF;}
 
   .error { max-height: 850px; }
 }
