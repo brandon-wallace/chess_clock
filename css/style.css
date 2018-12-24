@@ -92,11 +92,10 @@ nav {
 }
 
 .modal-content {
-  height: 45%;
   padding: 20px;
   display: flex;
   min-width: 300px;
-  min-height: 500px;
+  min-height: 475px;
   position: relative;
   align-items: center;
   flex-direction: column;
@@ -127,7 +126,8 @@ nav {
   text-align: center;
 }
 
-.box {
+.submit-button {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
