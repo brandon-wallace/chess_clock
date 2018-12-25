@@ -13,6 +13,7 @@ Features:
  * HTML5
  * CSS3
  * Sound Effects
+ * CSS Sprites
 
 License:
 
