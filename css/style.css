@@ -111,13 +111,18 @@ nav {
 }
 
 .modal-close {
-  top: 0;
-  right: 0;
   margin: 0;
-  font-size: 3rem;
+  top: -18px;
+  right: -20px;
+  color: #0080FF;
+  font-size: 5rem;
   line-height: .5;
   position: absolute;
   align-self: flex-end;
+}
+
+.modal-close:hover {
+  color: #CC0000;
 }
 
 .modal-card {
@@ -139,11 +144,33 @@ nav {
   justify-content: space-between;
 }
 
-.plus,
-.minus {
-  -moz-user-select: none;
+/* .plus,
+.minus { */
+  /* -moz-user-select: none;
   -webkit-user-select: none;
-  user-select: none;
+  user-select: none; */
+/* } */
+
+.plus {
+  left: 0px;
+  width: 64px;
+  height: 64px;
+  background: url('../images/plus.png') 0 0;
+}
+
+.plus:hover {
+  background: url('../images/plus.png') -64px -64px;
+}
+
+.minus {
+  left: 0px;
+  width: 64px;
+  height: 64px;
+  background: url('../images/minus.png') 0 0;
+}
+
+.minus:hover {
+  background: url('../images/minus.png') -64px -64px;
 }
 
 .modal-label {
