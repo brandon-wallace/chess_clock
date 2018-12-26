@@ -228,6 +228,13 @@ nav {
   font-size: 4rem;
 }
 
+.label,
+.digits,
+.crowns {
+  user-select: none;
+  -moz-user-select: none;
+}
+
 .numbers {
   margin: 0;
 }
