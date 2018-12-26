@@ -3,6 +3,7 @@ require("./index.html");
 require("./quotes.html");
 require("./links.html");
 require("./about.html");
+require("./audio/beep-06.mp3");
 require("./audio/click-button-2-soundbible.com-911295385.mp3");
 require("./audio/time-bomb-short-soundbible.com-1562499525.mp3");
 
@@ -14,13 +15,13 @@ let p1sec = 60;
 let p2sec = 60;
 let playing = true;
 let currentPlayer = 0;
+const beep = new Audio('audio/beep-06.mp3');
 const panel = document.querySelector(".players");
 const startbtn = document.querySelector(".start-btn");
 const pausebtn = document.querySelector(".pause-btn");
 const setTimebtn = document.querySelector(".set-time-btn");
 let min1 = Number(document.getElementById("minutes1").innerHTML);
 let min2 = Number(document.getElementById("minutes2").innerHTML);
-const beep = new Audio('audio/click-button-2-soundbible.com-911295385.mp3');
 
 
 // Add a leading zero if number is less than 10.
@@ -94,8 +95,10 @@ window.closeModal = closeModal;
 
 // Switch from player 1 to player 2 and vice versa.
 const swap = () => {
-  if (!playing) return; // Do not swap while not playing or paused.
+  if (!playing) return; // Do not swap player clock while not playing or paused.
   currentPlayer = currentPlayer === 0 ? 1 : 0;
+  const playerSwap = new Audio('audio/click-button-2-soundbible.com-911295385.mp3');
+  playerSwap.play();
 }
 
 
@@ -108,8 +111,10 @@ const pauseResumeReset = (resetFlag) => {
     playing = !playing; // Swap true and false or false to true.
     if (playing) {
       pausebtn.innerHTML = "PAUSE";
+      pausebtn.blur();
     } else {
       pausebtn.innerHTML = "RESUME";
+      pausebtn.blur();
     }
   } else {
     document.querySelectorAll(".numbers")[0].style.color = "#000000";
