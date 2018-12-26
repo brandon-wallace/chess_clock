@@ -144,13 +144,6 @@ nav {
   justify-content: space-between;
 }
 
-/* .plus,
-.minus { */
-  /* -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none; */
-/* } */
-
 .plus {
   left: 0px;
   width: 64px;
