@@ -12,8 +12,9 @@ module.exports = {
   },
   devServer: {
     contentBase: "dist",
-    watchContentBase: true,
-    overlay: true
+    hot: true,
+    overlay: true,
+    compress: true
   },
   module: {
     rules: [{
