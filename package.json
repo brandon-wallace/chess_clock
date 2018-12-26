@@ -1,0 +1,35 @@
+{
+  "name": "chess_clock",
+  "version": "1.0.0",
+  "description": "An online chess clock.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode=production --config=webpack.prod.js",
+    "start": "webpack-dev-server --mode=development --config=webpack.dev.js",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iambw/chess_clock.git"
+  },
+  "keywords": [],
+  "author": "brandon_wallace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iambw/chess_clock/issues"
+  },
+  "homepage": "https://github.com/iambw/chess_clock#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^2.0.2",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  }
+}
