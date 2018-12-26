@@ -1,21 +1,23 @@
 # A mobile first, responsive online chess clock - New and Improved!
 
 
-## Created using Javascript ES6, HTML5, and CSS3. ##
+## Created using Javascript ES6, Webpack, Babel, HTML5, and CSS3. ##
 
 
-## Website: [https://iambw.github.io/chess_clock/](https://iambw.github.io/chess_clock/)
+## Website: [http://chessclock.netlify.com](http://chessclock.netlify.com)
 
 ## Features:
  * Mobile First
  * Responsive Design
  * Javascript ES6
+ * Webpack 4
+ * Babel
  * HTML5
  * CSS3
  * Sound Effects
  * CSS Sprites
 
- # &#9815; &#9812; &#9823; &#9822; &#9816; &#9818; &#9821; &#9813; &#9819; &#9820; &#9817; &#9814;
+## &#9815; &#9812; &#9823; &#9822; &#9816; &#9818; &#9821; &#9813; &#9819; &#9820; &#9817; &#9814;
 
 
 ![chess clock screenshot 1](src/images/screenshot1.jpg)
