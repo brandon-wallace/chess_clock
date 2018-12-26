@@ -17,6 +17,13 @@ module.exports = {
   },
   module: {
     rules: [{
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader"
+        }
+      },
+      {
         test: /\.css$/,
         use: [{
             loader: "style-loader"
@@ -51,11 +58,11 @@ module.exports = {
         //       'file-loader?name=[name].[ext]&publicPath=./&outputPath=./images/',
         //       'image-webpack-loader'
         //     ]
-        test: /\.(jpg|png|gif|svg)$/,
+        test: /\.(jpe?g|png|gif|svg)$/,
         use: [{
           loader: "file-loader",
           options: {
-            name: "./images/[name].[ext]",
+            name: "images/[name].[ext]",
             // outputPath: 'images'
           }
         }]
