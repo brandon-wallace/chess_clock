@@ -53,17 +53,11 @@ module.exports = {
         ]
       },
       {
-        // test: /\.(jpe?g|png|gif|svg)$/i,
-        //     use: [
-        //       'file-loader?name=[name].[ext]&publicPath=./&outputPath=./images/',
-        //       'image-webpack-loader'
-        //     ]
         test: /\.(jpe?g|png|gif|svg)$/,
         use: [{
           loader: "file-loader",
           options: {
             name: "images/[name].[ext]",
-            // outputPath: 'images'
           }
         }]
       },
