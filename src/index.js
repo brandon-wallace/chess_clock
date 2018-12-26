@@ -13,7 +13,7 @@ require("./audio/time-bomb-short-soundbible.com-1562499525.mp3");
 
 let p1sec = 60;
 let p2sec = 60;
-let playing = true;
+let playing = false;
 let currentPlayer = 0;
 const beep = new Audio('audio/beep-06.mp3');
 const panel = document.querySelector(".players");
@@ -154,7 +154,7 @@ const start = () => {
   startbtn.blur(); // Remove focus from button.
   playing = true;
   beep.play();
-  let timeout = new Audio('audio/timeout.mp3');
+  let timeout = new Audio('audio/time-bomb-short-soundbible.com-1562499525.mp3');
   let timer = setInterval(function() {
 
     if (currentPlayer === 0) {
@@ -218,11 +218,12 @@ const start = () => {
 window.start = start;
 
 
+
 // Listen for click on either player div to swap player clock.
 panel.addEventListener("click", swap);
 
 // Listen for spacebar press to swap player clock.
-document.addEventListener("keypress", event => {
+panel.addEventListener("keypress", event => {
   if (event.keyCode === 32 || event.which === 32) {
     swap();
   }
