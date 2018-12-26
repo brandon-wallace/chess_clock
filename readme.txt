@@ -4,7 +4,7 @@ A mobile first, responsive online chess clock - New and Improved!
  ## Created using Javascript ES6, Webpack, Babel, HTML5, and CSS3. ##
 
 
- Website: [http://chessclock.netlify.com](http://chessclock.netlify.com)
+ Website: [https://chessclock.netlify.com](https://chessclock.netlify.com)
 
  Features:
   * Mobile First
