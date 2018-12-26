@@ -222,7 +222,7 @@ window.start = start;
 panel.addEventListener("click", swap);
 
 // Listen for spacebar press to swap player clock.
-document.addEventListener("keypress", event => {
+document.addEventListener("keypress", event => { 
   if (event.keyCode === 32 || event.which === 32) {
     swap();
   }
