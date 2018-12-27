@@ -170,11 +170,6 @@ nav {
   font-size: 2rem;
 }
 
-.bg-blue {
-  color: #FFFFFF;
-  background-color: #0080FF;
-}
-
 .btn {
   width: 160px;
   font-weight: bold;
@@ -182,6 +177,11 @@ nav {
   padding: 10px 15px;
   border: 4px solid #000000;
   background-color: #EEEEEE;
+}
+
+.bg-blue {
+  color: #FFFFFF;
+  background-color: #0080FF;
 }
 
 .btn:hover {
