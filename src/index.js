@@ -4,6 +4,7 @@ require("./quotes.html");
 require("./links.html");
 require("./about.html");
 require("./audio/beep-06.mp3");
+require("./images/favicon.svg");
 require("./audio/click-button-2-soundbible.com-911295385.mp3");
 require("./audio/time-bomb-short-soundbible.com-1562499525.mp3");
 
