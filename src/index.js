@@ -121,10 +121,11 @@ const pauseResumeReset = (resetFlag) => {
     document.querySelectorAll(".numbers")[1].style.color = "#FFFFFF";
     document.getElementById("sec1").innerHTML = '00';
     document.getElementById("sec2").innerHTML = '00';
-    startbtn.disabled = false;
+    document.getElementById("min1").innerHTML = 10;
+    document.getElementById("min2").innerHTML = 10;
+    pausebtn.innerHTML = "PAUSE";
     setTimebtn.disabled = false;
-    min1.innerHTML = 10;
-    min2.innerHTML = 10;
+    startbtn.disabled = false;
     currentPlayer = 0;
   }
 }
