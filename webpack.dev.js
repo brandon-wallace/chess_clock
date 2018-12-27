@@ -11,11 +11,8 @@ module.exports = {
     publicPath: "/"
   },
   devServer: {
-    contentBase: "dist",
-    watchContentBase: true,
-    hot: true,
-    overlay: true,
-    compress: true
+    contentBase: "./dist",
+    overlay: true
   },
   module: {
     rules: [{
