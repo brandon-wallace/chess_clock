@@ -84,13 +84,20 @@ const decreaseTimeP2 = () => {
 window.decreaseTimeP2 = decreaseTimeP2;
 
 
-// Close modal window and set time.
+// Close modal window.
 const closeModal = () => {
+  document.querySelector(".modal").style.display = "none";
+}
+window.closeModal = closeModal;
+
+
+// Close modal window and set time.
+const updateTime = () => {
   document.getElementById("min1").innerHTML = padZero(min1);
   document.getElementById("min2").innerHTML = padZero(min2);
   document.querySelector(".modal").style.display = "none";
 }
-window.closeModal = closeModal;
+window.updateTime = updateTime;
 
 
 // Switch from player 1 to player 2 and vice versa.
