@@ -16,7 +16,7 @@ A mobile first, responsive online chess clock - New and Improved!
   * CSS3
   * Sound Effects
   * CSS Sprites
-
+  * A Custom Font
 
 License:
 
