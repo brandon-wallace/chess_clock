@@ -28,6 +28,12 @@ module.exports = {
         ]
       },
       {
+        test: /\.(ttf|otf)$/,
+        loader: [
+          "url-loader"
+        ]
+      },
+      {
         test: /\.html$/,
         use: [{
             loader: "file-loader",

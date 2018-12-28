@@ -27,6 +27,7 @@
     "file-loader": "^3.0.1",
     "html-loader": "^0.5.5",
     "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.14"
