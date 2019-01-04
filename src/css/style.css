@@ -194,6 +194,11 @@ nav {
   background-color: #7F7F7F;
 }
 
+.bg-blue:hover {
+  color: #76BAF9;
+  background-color: #0058AF;
+}
+
 .players {
   display: flex;
   align-items: center;
