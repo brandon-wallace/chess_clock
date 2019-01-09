@@ -408,6 +408,7 @@ nav {
   flex-direction: column;
   background-color: #D9D9D9;
   justify-content: space-around;
+  border-bottom: 8px solid #0080FF;
 }
 
 .images-column img {
@@ -442,6 +443,10 @@ nav {
 @media only screen and (min-width: 700px) {
   .links {
     flex-direction: row;
+  }
+
+  .links-column {
+    border-bottom: 8px solid #0080FF;
   }
 
   .hidden {
