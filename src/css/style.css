@@ -208,7 +208,7 @@ nav {
 
 .player {
   width: 100%;
-  height: 40vh;
+  height: 36vh;
   display: flex;
   max-width: 400px;
   align-items: center;
@@ -236,7 +236,7 @@ nav {
 
 .label {
   margin: 0;
-  font-size: 4rem;
+  font-size: 3.25rem;
 }
 
 .label,
@@ -251,7 +251,7 @@ nav {
 }
 
 .digits {
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .time-controls {
@@ -264,9 +264,15 @@ nav {
 }
 
 /* Media queries for index page */
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 350px) and (min-height: 650px) {
+  .player {
+    height: 40vh;
+  }
+  .label {
+    font-size: 4rem;
+  }
   .digits {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
 }
 
