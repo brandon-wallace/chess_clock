@@ -1,12 +1,14 @@
 # A mobile first, responsive online chess clock - New and Improved!
 
 
-## Created using Javascript ES6, Webpack, Babel, HTML5, and CSS3. ##
+# Created using Javascript ES6, Webpack, Babel, HTML5, and CSS3.
 
 
-## Website: [https://chessclock.netlify.com](https://chessclock.netlify.com)
+# https://chessclock.netlify.com
 
-## Features:
+
+# Features:
+
  * Mobile First
  * Responsive Design
  * Javascript ES6
@@ -18,7 +20,7 @@
  * CSS Sprites
  * A Custom Font
 
-## &#9815; &#9812; &#9823; &#9822; &#9816; &#9818; &#9821; &#9813; &#9819; &#9820; &#9817; &#9814;
+# &#9815; &#9812; &#9823; &#9822; &#9816; &#9818; &#9821; &#9813; &#9819; &#9820; &#9817; &#9814;
 
 
 ![chess clock screenshot 1](src/images/screenshot1.jpg)
@@ -28,6 +30,6 @@
 ![chess clock screenshot 3](src/images/screenshot3.jpg)
 
 
-## License: ##
+# License:
 
 This project is licensed under the GPL-3.0 License.
