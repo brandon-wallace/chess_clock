@@ -76,7 +76,10 @@ nav {
 }
 
 .menu li a {
+  display: block;
   color: #FFFFFF;
+  padding: 1rem;
+  cursor: pointer;
   font-weight: bold;
   text-decoration: none;
 }
