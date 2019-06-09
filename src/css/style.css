@@ -216,10 +216,10 @@ nav {
   font-size: 5rem;
   font-weight: 600;
   text-align: center;
-  text-shadow: 2px 2px 0 #121212,
-               -2px 2px 0 #121212,
-               -2px -2px 0 #121212,
-               2px -2px 0 #121212;
+  text-shadow: 2.5px 2.5px 0 #121212,
+               -2.5px 2.5px 0 #121212,
+               -2.5px -2.5px 0 #121212,
+               2.5px -2.5px 0 #121212;
   font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -314,10 +314,12 @@ nav {
   .crowns {
     display: block;
   }
-
   .time-controls {
     margin-top: 10px;
     max-width: 800px;
+  }
+  .btn {
+     font-size: 1.2rem;
   }
 }
 /* END index page */
@@ -372,15 +374,12 @@ nav {
   .quotes {
     margin: 2% auto 2% auto;
   }
-
   .quote-card {
     width: 50%;
   }
-
   .left {
     justify-content: flex-end;
   }
-
   .right {
     justify-content: flex-start;
   }
@@ -581,7 +580,6 @@ my-email::before {
   .about {
     margin-top: 2%;
   }
-
   .about-email {
     font-size: 2.6rem;
   }
@@ -591,12 +589,9 @@ my-email::before {
   .about {
     padding: 20px 10px 30px 10px;
   }
-
   .about-email {
-    /* font-size: 3rem; */
     margin-bottom: 10px;
   }
-
   .about-icons {
     font-size: 5rem;
     padding: 15px;
@@ -642,14 +637,11 @@ my-email::before {
 
 @media only screen and (min-width: 500px) {
   .error-text { font-size: 5rem; }
-
   .error-sub-text { font-size: 4rem; }
 }
 @media only screen and (min-width: 650px) {
   .error-text { font-size: 7rem; }
-
   .error-sub-text { font-size: 5rem; }
-
   .error { max-height: 850px; }
 }
 /* END 404 error page */
