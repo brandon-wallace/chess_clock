@@ -192,6 +192,7 @@ nav {
   padding: 10px 15px;
   border: 4px solid #000000;
   background-color: #EEEEEE;
+  transition: all 250ms linear;
 }
 
 .bg-blue {
@@ -200,8 +201,8 @@ nav {
 }
 
 .btn:hover {
-  color: #CECECE;
-  background-color: #7F7F7F;
+  color: #FFFFFF;
+  background-color: #333333;
 }
 
 .bg-blue:hover {
