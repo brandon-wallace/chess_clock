@@ -289,6 +289,21 @@ nav {
 }
 
 /* Media queries for index page */
+@media only screen and (orientation: landscape) {
+  .players {
+    flex-direction: row;
+  }
+  .player {
+    height: 65vh;
+  }
+  .time-controls {
+    max-width: 800px;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+
 @media only screen and (min-width: 350px) and (min-height: 650px) {
   .player {
     height: 40vh;
