@@ -23,11 +23,13 @@
 # &#9815; &#9812; &#9823; &#9822; &#9816; &#9818; &#9821; &#9813; &#9819; &#9820; &#9817; &#9814;
 
 
-![chess clock screenshot 1](src/images/screenshot1.jpg)
+![chess clock screenshot 1](src/images/screenshot1.png)
 
-![chess clock screenshot 2](src/images/screenshot2.jpg)
+![chess clock screenshot 2](src/images/screenshot2.png)
 
-![chess clock screenshot 3](src/images/screenshot3.jpg)
+![chess clock screenshot 3](src/images/screenshot3.png)
+
+![chess clock screenshot 4](src/images/screenshot4.jpg)
 
 
 # License:
