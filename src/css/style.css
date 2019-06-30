@@ -106,7 +106,12 @@ nav {
   border-bottom: 1px solid #EEEEEE;
 }
 
-.menu-link:hover {
+.menu-link:hover,
+.menu-link:focus {
+  color: #AAAAAA;
+}
+
+.active {
   color: #AAAAAA;
 }
 
@@ -300,6 +305,16 @@ nav {
 }
 
 @media only screen and (min-width: 850px) {
+  .menu {
+    flex-direction: row;   
+  }
+  .menu-toggle {
+    display: none;
+  }
+  .menu-item {
+    display: block;
+    text-align: center;
+  }
   .players {
     flex-direction: row;
   }
