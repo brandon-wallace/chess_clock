@@ -4,7 +4,7 @@
 # Created using Javascript ES6, Webpack, Babel, HTML5, and CSS3.
 
 
-# https://chessclock.netlify.com
+# https://chessclock.tk
 
 
 # Features:
