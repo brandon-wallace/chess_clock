@@ -4,8 +4,10 @@
 <head>
 
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="#">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> 
+  <meta name="description" content="An online chess clock">
+  <link rel="shortcut icon" href="images/favicon.ico">
   <link rel="icon" type="image/svg" href="images/favicon.svg">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <title>About</title>
@@ -16,19 +18,17 @@
 
   <!-- NoScript message -->
   <noscript>
-    <body style="position: relative;">
-      <div style="top:0;left:0;width:100%;height:100%;color:#CC0000;
-        position: absolute;text-align:center;font-family:sans-serif;
-        background-color:hsla(0, 0%, 60%, .7);">
-        <h1 style="font-size:2.25rem;">PLEASE ENABLE JAVASCRIPT TO VIEW WEBSITE PROPERLY</h1>
-      </div>
-    </body>
+    <div style="color:#CC0000; text-align:center; font-family:sans-serif;">
+      <h2 style="font-size:2.25rem;">PLEASE ENABLE JAVASCRIPT TO VIEW WEBSITE PROPERLY</h2>
+    </div>
   </noscript>
 
   <header>
 
     <nav>
+
       <ul class="menu">
+
         <li class="menu-toggle">
           <div class="menu-toggle-icon"></div>
           <div class="menu-toggle-icon"></div>
@@ -38,7 +38,9 @@
         <li class="menu-item"><a class="menu-link" href="quotes.html">quotes</a></li>
         <li class="menu-item"><a class="menu-link" href="links.html">links</a></li>
         <li class="menu-item"><a class="menu-link active" href="about.html">about</a></li>
+
       </ul>
+
     </nav>
 
   </header>
@@ -50,27 +52,24 @@
       <img src="images/board_pieces.jpg" alt="chessboard and pieces">
 
       <div class="about-text">
-        <h4>Created by Brandon Wallace using Javascript ES6, Webpack, Babel, HTML5, and CSS3</h4>
 
-        <h1 class="about-email">
-          <my-email data-user="brandonwallace" data-domain="fastmail.us"></my-email>
-        </h1>
+        <h4>Created by Brandon Wallace using Javascript ES6, Webpack, Babel, HTML5, and CSS3</h4>
+        <h3 class="about-email"><a href="https://brandonwallace.cc">brandonwallace.cc</a></h3>
 
       </div>
 
       <div class="about-icons">
-        <a href="https://github.com/brandon-wallace"><i class="fab fa-github"></i></a>
-        <span class="icon-bar">|</span>
-        <a href="https://codepen.io/brandon_wallace/"><i class="fab fa-codepen"></i></a>
+        <a class="icon-link" href="https://github.com/brandon-wallace" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="icon-link" href="https://www.freecodecamp.org/brandon_wallace" target="_blank"><i class="fab fa-free-code-camp"></i></a>
+        <a class="icon-link" href="https://codepen.io/brandon_wallace/" target="_blank"><i class="fab fa-codepen"></i></a>
       </div>
-
-      <p class="donate-btn"><span class="donate"><a href="https://www.paypal.me/bwchessclock">PLEASE DONATE</a></span></p>
 
     </div>
 
   </article>
 
   <script src="main-bundle.js"></script>
+
 </body>
 
 </html>

@@ -254,6 +254,7 @@ nav {
 }
 
 .players {
+  margin: 5px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -348,6 +349,10 @@ nav {
 @media only screen and (min-width: 850px) {
   .menu {
     flex-direction: row;   
+    justify-content: flex-end;
+  }
+  .menu li {
+    width: unset;
   }
   .menu-toggle {
     display: none;
@@ -569,17 +574,30 @@ nav {
 .about-email {
   font-size: 1.3rem;
 }
+.about-email a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.about-email a:hover {
+  color: blue;
+  text-decoration: underline;
+}
 
 .about-icons {
-    width: 225px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-around;
+  width: 275px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
 }
 
 .about-icons i {
-    color: #000000;
-    font-size: 4rem;
+  color: #000000;
+  font-size: 4rem;
+}
+
+.icon-link i:hover {
+  color: blue;
 }
 
 my-email::after {
