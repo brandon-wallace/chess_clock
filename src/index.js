@@ -54,7 +54,7 @@ const increaseTimeP1 = () => {
 window.increaseTimeP1 = increaseTimeP1;
 
 
-// Decrease time for player 2.
+// Decrease time for player 1.
 const decreaseTimeP1 = () => {
   if (min1 === 1) {
     min1 = 2;
