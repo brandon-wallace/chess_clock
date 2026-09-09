@@ -1,11 +1,6 @@
 # A mobile first, responsive online chess clock - New and Improved!
 
-
 # Created using Javascript ES6, Webpack, Babel, HTML5, and CSS3.
-
-
-# https://chessclock.tk
-
 
 # Features:
 
