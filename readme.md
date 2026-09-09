@@ -28,6 +28,18 @@
 
 ![chess clock screenshot 4](src/images/screenshot4.jpg)
 
+### Run application
+
+```
+$ npm install
+
+$ npm run build
+
+$ cd dist/
+```
+
+Open index.html in a browser.
+
 
 # License:
 
